@@ -1,0 +1,31 @@
+// Families.
+$font__sans: "Helvetica", sans-serif;
+$font__serif: "Georgia", serif;
+$font__mono: "apercu-mono", monospace;
+
+// Weights.
+$font__sans--regular: normal;
+$font__sans--bold: bold;
+
+$font__serif--regular: normal;
+$font__serif--bold: bold;
+
+$font__mono--regular: 400;
+$font__mono--bold: 700;
+
+// Defaults.
+$default__size: $unit--b;
+$default__family: $font__mono;
+$default__weight: $font__mono--regular;
+$default__leading: $spacing--b;
+
+@font-face {
+  font-family: "apercu-mono";
+  src: url('../fonts/apercu-mono-webfont.eot');
+  src: url('../fonts/apercu-mono-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/apercu-mono-webfont.woff') format('woff'),
+       url('../fonts/apercu-mono-webfont.ttf')  format('truetype'),
+       url('../fonts/apercu-mono-webfont.svg#apercu-mono') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

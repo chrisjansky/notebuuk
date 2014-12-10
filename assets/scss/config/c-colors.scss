@@ -1,0 +1,54 @@
+$c-hue1: 205;
+$c-hue2: 165;
+$c-hue3: 55;
+$c-hue4: 345;
+
+// Primary colors.
+$c-color1--white: hsb($c-hue1, 90, 80);
+$c-color1--light: hsb($c-hue1, 80, 70);
+$c-color1: hsb($c-hue1, 90, 60);
+$c-color1--dark: hsb($c-hue1, 85, 35);
+$c-color1--black: hsb($c-hue1, 90, 30);
+
+$c-color2--white: hsb($c-hue2, 55, 95);
+$c-color2--light: hsb($c-hue2, 65, 85);
+$c-color2: hsb($c-hue2, 70, 80);
+$c-color2--dark: hsb($c-hue2, 75, 60);
+$c-color2--black: hsb($c-hue2, 65, 35);
+
+$c-color3--white: hsb($c-hue3, 60, 95);
+$c-color3--light: hsb($c-hue3, 65, 90);
+$c-color3: hsb($c-hue3, 80, 90);
+$c-color3--dark: hsb($c-hue3, 80, 85);
+$c-color3--black: hsb($c-hue3, 80, 80);
+
+$c-color4--white: hsb($c-hue4, 65, 100);
+$c-color4--light: hsb($c-hue4, 70, 95);
+$c-color4: hsb($c-hue4, 90, 90);
+$c-color4--dark: hsb($c-hue4, 85, 85);
+$c-color4--black: hsb($c-hue4, 80, 80);
+
+// Neutral colors.
+$c-grey1: hsb(040, 03, 95);
+$c-grey2: hsb(040, 04, 90);
+$c-grey3: hsb(040, 05, 80);
+$c-grey4: hsb(040, 06, 65);
+$c-grey5: hsb(210, 07, 50);
+$c-grey6: hsb(210, 08, 35);
+$c-grey7: hsb(210, 09, 25);
+$c-grey8: hsb(210, 10, 10);
+
+// Interactive.
+$c-link--light: $c-color3--light;
+$c-link: $c-color3;
+$c-link--dark: $c-color3--dark;
+
+$c-visited: $c-grey4;
+$c-hover: $c-color2;
+
+$c-active: $c-color3;
+$c-active--light: $c-color3--light;
+$c-active--dark: $c-color3--dark;
+
+$c-select__background: $c-color2--white;
+$c-select__text: $c-color2--black;

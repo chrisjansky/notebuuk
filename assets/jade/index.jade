@@ -1,0 +1,84 @@
+extends templates/_basic
+
+block template-body
+
+  header.m-intro.o-hero(style="background-image: url('assets/images/bg_top1.jpg')")
+    .o-hero__overlay
+      .o-hero__content
+        .m-intro__title
+          strong.o-logo
+            include ../svg/_build/logo_small.svg
+            span.o-logo__title notebuuk
+          h1.t-h1 from paper 
+            span.t-h1__underline with love
+        p.m-intro__text.t-lead Say hello to a&nbsp;new brand of premium notebuuks, entirely hand-made, entirely awesome.
+
+    a(href="#about", data-scrollto).m-intro__more
+      mark.o-mark.o-iconed--left.ss-down
+        span.o-mark__underline
+          span.o-mark__tracked Mor
+          | e
+
+  main#about.l-wrap.l-wrap--huge.m-about
+    h2.t-h2.m-about__title meet your 
+      span.t-h2__underline new favourite
+      |  
+      span.m-about__break notebuuk
+
+    p.m-about__text.t-lead: +dummy(20, "text")
+
+    ul.m-about__triplet.o-triplet
+      li.o-triplet__item--1
+        span.o-triplet__icon
+          include ../svg/_build/icon_about1.svg
+        p.o-triplet__text: +dummy(25, "text")
+      li.o-triplet__item--2
+        span.o-triplet__icon
+          include ../svg/_build/icon_about2.svg
+        p.o-triplet__text: +dummy(25, "text")
+      li.o-triplet__item--3
+        span.o-triplet__icon
+          include ../svg/_build/icon_about3.svg
+        p.o-triplet__text: +dummy(25, "text")
+
+    .m-about__background
+      include partials/_icons
+
+  aside.o-peek
+    .o-peek__content(style="background-image: url('assets/images/bg_stopmotion1b.jpg')")
+
+  section.m-features.l-wrap.l-wrap--big
+    h2.t-h2.t-h2--color 7 reasons to 
+      span.t-h2__underline fall in love
+    p.m-features__text.t-lead Each notebuuk is destined to be your companion with its pocket-friendly dimensions of 114&thinsp;&times;&thinsp;184&thinsp;mm.
+
+  include partials/_carousel
+
+  footer.m-footer.l-wrap.l-wrap--big.o-section--light
+    h2.t-h2 buuk yours 
+      span.t-h2__underline now
+    .m-footer__text
+      p Our first collection sold out in 4 days. Be there when there&rsquo;s a new one.
+
+    .o-subscribe
+      p.o-subscribe__text.o-iconed--left.ss-alarmclock Online store coming Q1 2015. Subscribe to get notified!
+      include partials/_mailchimp.html
+
+    .o-social
+      a(href="#").o-social__link
+        include ../svg/_build/icon_facebook.svg
+        span.o-social__title Facebook
+      a(href="#").o-social__link
+        include ../svg/_build/icon_instagram.svg
+        span.o-social__title Instagram
+
+    .o-credit
+      .o-credit__authors.t-small Project of 
+        a.i-link--dark(href="http://chrisjansky.cz", rel="author") Christian Jánský
+        |  &amp; 
+        a.i-link--dark(href="http://terezina.cz", rel="author") Tereza Čižmárová
+      small.o-credit__tiny.t-tiny Photography by 
+        a.i-link--light(href="http://filipberanek.com") Filip Beránek
+
+    .m-footer__background
+      include partials/_icons

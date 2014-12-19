@@ -160,7 +160,7 @@ gulp.task("build-strip", ["build-compile"], function() {
 */
 
 gulp.task("deploy", function() {
-  return gulp.src(config.paths.production + "**/*")
+  return gulp.src(config.paths.production + "/**/*", {base: config.paths.production})
     .pipe(plugins.ftp({
       host: config.ftp.host,
       user: config.ftp.user,

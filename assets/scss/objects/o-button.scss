@@ -1,0 +1,63 @@
+// A basic button.
+//
+// .o-button--solid - Solid background.
+// .o-button--outline - Outline variant.
+// .o-button--block - Full-width.
+// .o-button--selected - Selected.
+//
+// Markup:
+// <a href="#" class="o-button {$modifiers}">Button</a>
+// <a href="#" class="o-button {$modifiers} pseudo-class-hover">On Hover</a>
+//
+// Styleguide 3.1.
+[class^="o-button--"],
+[class*=" o-button--"] {
+  display: inline-block;
+
+  padding-left: em($ratio--b);
+  padding-right: em($ratio--b);
+  line-height: em($height--b);
+  
+  border-radius: $radius--b;
+
+  text-decoration: none;
+}
+
+.o-button--solid {
+  @include state--link {
+    color: $c-color3--black;
+    background-color: $c-link;
+  }
+  @include state--active {
+    color: white;
+    background-color: $c-hover;
+  }
+}
+
+// Outline border.
+.o-button--outline {
+  border: $line--b solid;
+  line-height: em($height--b - $line--b * 2);
+  @include state--link {
+    color: $c-link;
+  }
+  @include state--active {
+    color: $c-hover;
+  }
+}
+
+// Block, centered text.
+.o-button--block {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+// Selected.
+.o-button--selected {
+  @include state--all {
+    background-color: $c-grey1;
+    color: $c-grey4;
+  }
+}

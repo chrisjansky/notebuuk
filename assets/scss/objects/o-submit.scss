@@ -1,0 +1,44 @@
+[class^="o-submit"],
+[class*=" o-submit"] {
+  height: em($height--b, $unit--m);
+  padding: 0;
+
+  background-color: transparent;
+  color: $c-color2;
+
+  border: none;
+  border-bottom: $line--b solid;
+
+  font-family: $font__sans;
+  font-weight: $font__sans--medium;
+  font-size: em($unit--m);
+
+  @include state--hover {
+    color: $c-link--dark;
+    border-color: $c-link;
+  }
+  @include state--focus {
+    color: $c-link--dark;
+    background-color: $c-link--light;
+    border-color: $c-link;
+    outline: 0;
+  }
+}
+
+.o-submit--top {
+  vertical-align: top;
+}
+
+.o-submit--reset {
+  color: $c-color4;
+
+  @include state--hover {
+    color: $c-color4--dark;
+    border-color: $c-color4;
+  }
+  @include state--focus {
+    color: $c-color4--dark;
+    background-color: $c-color4--light;
+    border-color: $c-color4;
+  }
+}

@@ -1,0 +1,22 @@
+// Text input.
+.o-input {
+  height: em($height--b);
+  padding: 0 em($ratio--b);
+
+  background-color: white;
+
+  border: none;
+  // border-bottom: $line--b solid;
+
+  font-size: em($unit--m);
+  
+  @include state--hover {
+    border-color: $c-grey6;
+  }
+  @include state--focus {
+    border-color: $c-color1;
+    outline: 0;
+  }
+  // iOS reset.
+  -webkit-appearance: none;
+}

@@ -1,0 +1,5 @@
+.o-icon--m {
+  &:before, &:after {
+    font-size: #{$icon--m}px;
+  }
+}

@@ -1,0 +1,24 @@
+.o-hero {
+  position: relative;
+  height: 100vh;
+
+  background: no-repeat center / cover;
+}
+
+.o-hero__overlay {
+  @include stretch-overlay;
+  @include pseudo-center--parent;
+
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+
+  z-index: $index--b;
+}
+
+.o-hero__content {
+  // @include padding(null em($ratio--b));
+  @include collapse-children;
+  @include pseudo-center--child;
+  white-space: normal;
+}

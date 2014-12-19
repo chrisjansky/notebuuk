@@ -1,0 +1,122 @@
+.m-intro__title {
+  display: inline-block;
+}
+.m-intro__text {
+  @include span-columns(6);
+  @include shift(3);
+  margin-bottom: em($ratio--l);
+}
+.m-intro__more {
+  position: absolute;
+  bottom: em($ratio--l);
+  left: 0;
+  right: 0;
+
+  text-align: center;
+  text-decoration: none;
+
+  z-index: $index--m;
+
+  &:hover {
+    .o-mark:before {
+      transform: translateY(25%);
+    }
+  }
+}
+
+.m-about {
+  position: relative;
+  overflow: hidden;
+
+  color: white;
+  background-color: $c-color1--black;
+}
+.m-about__break {
+  display: block;
+}
+.m-about__text {
+  @include span-columns(8);
+  @include shift(2);
+  margin-bottom: em($ratio--m);
+}
+.m-about__triplet {
+  clear: left;
+}
+.m-about__background {
+  [class^="svg-"],
+  [class*=" svg-"] {
+    position: absolute;
+  }
+  .svg-circle {
+    left: 15%;
+    bottom: -7%;
+    fill: $c-color3--light;
+  }
+  .svg-parallel {
+    left: 15%;
+    top: -5%;
+    fill: $c-grey1;
+  }
+  .svg-triangle {
+    left: -2%;
+    top: 35%;
+    fill: $c-color2--light;
+  }
+  .svg-pie {
+    right: -1%;
+    top: 20%;
+    fill: $c-color4--light;
+  }
+  .svg-rectangle {
+    right: -5%;
+    bottom: 10%;
+    fill: $c-color1;
+  }
+}
+
+.m-features__text {
+  @include span-columns(8);
+  @include shift(2);
+  
+  text-align: center;
+}
+
+.m-footer {
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+}
+.m-footer__background {
+  [class^="svg-"],
+  [class*=" svg-"] {
+    position: absolute;
+    fill: none;
+    stroke-width: 3;
+  }
+  .svg-circle {
+    left: 55%;
+    top: -10%;
+    stroke: $c-color3--light;
+  }
+  .svg-parallel {
+    left: 10%;
+    bottom: -20%;
+    stroke: $c-grey3;
+  }
+  .svg-triangle {
+    left: -5%;
+    top: 10%;
+    stroke: $c-color2--light;
+  }
+  .svg-pie {
+    right: -3%;
+    top: 20%;
+    stroke: $c-color4--light;
+  }
+  .svg-rectangle {
+    right: -10%;
+    bottom: 10%;
+    stroke: $c-color1;
+  }
+}

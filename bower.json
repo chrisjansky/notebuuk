@@ -21,7 +21,6 @@
     "jquery": "~2.1.1",
     "jquery-easing-original": "~1.3.1",
     "idangerous-swiper": "~2.7.0",
-    "featherlight": "~1.0.2",
     "chj-framework": "~0.3.1"
   }
 }

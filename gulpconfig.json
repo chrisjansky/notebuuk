@@ -41,7 +41,7 @@
   "ftp": {
     "host": "chrisjansky.cz",
     "user": "w85799",
-    "pass": "noveheslo2014",
+    "pass": "",
     "path": "www/subdom/work/notebuuk"
   }
 }

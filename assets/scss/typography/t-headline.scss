@@ -1,0 +1,52 @@
+// Headlines.
+//
+// Markup:
+// <h1 class="t-h1">First Headline</h1>
+// <h2 class="t-h2">Second Headline</h2>
+// <h3 class="t-h3">Third Headline</h3>
+// <h4 class="t-h4">Fourth Headline</h4>
+//
+// Styleguide 0.2.
+.t-h1 {
+  font-family: $font__serif;
+  font-weight: $font__serif--light;
+  font-size: em($unit--xxl);
+  line-height: 1.1;
+  @include margin(em($ratio--s) null);
+}
+.t-h1__underline {
+  border-bottom: $line--l solid;
+  vertical-align: 28%; // Magic number
+}
+.t-h2 {
+  font-family: $font__serif;
+  font-weight: $font__serif--regular;
+  font-size: em($ratio--l);
+  line-height: 1.2;
+
+  text-align: center;
+
+  @include margin(em($ratio--s) null);
+}
+.t-h2--color {
+  color: $c-color1--light;
+  .t-h2__underline {
+    color: $c-color4--light;
+  }
+}
+.t-h2__underline {
+  border-bottom: $line--m solid;
+  vertical-align: 26%;
+}
+.t-h3 {
+  font-family: $font__serif;
+  font-weight: $font__serif--regular;
+  font-size: em($unit--l);
+  line-height: 1.3;
+
+  @include margin(em($ratio--xs) null);
+}
+.t-h4 {
+  font-size: em($unit--m);
+  @include margin(em($ratio--b) null);
+}

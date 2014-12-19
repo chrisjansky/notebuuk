@@ -1,0 +1,18 @@
+section.o-carousel.l-wrap--bottom-big.swiper-container(data-carousel)
+  ul.o-carousel__list.swiper-wrapper
+    each instance, index in featuresItems
+      li.o-carousel__item.swiper-slide
+        figure.o-figure
+          .o-figure__media.o-carousel__media
+            img.o-figure__image(src="assets/images/#{instance.image}", alt=instance.alt)
+          figcaption.o-carousel__text
+            h3.t-h3 Reason N
+              span.t-super o
+              |  
+              = index + 1
+            p= instance.text
+
+  a(href="#", data-swiper--prev).o-carousel__arrow--prev
+    span.o-icon--m.ss-navigateleft
+  a(href="#", data-swiper--next).o-carousel__arrow--next
+    span.o-icon--m.ss-navigateright

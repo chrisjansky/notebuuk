@@ -1,0 +1,46 @@
+{
+  "featuresItems": [
+    {
+      "name": "front",
+      "image": "feature_front.jpg",
+      "alt": "An unique hardcover",
+      "text": "An unique hardcover with a veneer inlay"
+    },
+    {
+      "name": "screenprint",
+      "image": "feature_screenprint.jpg",
+      "alt": "A custom screen print",
+      "text": "A custom screen print"
+    },
+    {
+      "name": "calendar",
+      "image": "feature_calendar.jpg",
+      "alt": "A fold-out calendar",
+      "text": "A fold-out calendar"
+    },
+    {
+      "name": "binding",
+      "image": "feature_binding.jpg",
+      "alt": "Handsewn binding",
+      "text": "Handsewn binding"
+    },
+    {
+      "name": "papers",
+      "image": "feature_papers.jpg",
+      "alt": "Special recycled papers",
+      "text": "Special recycled papers"
+    },
+    {
+      "name": "band",
+      "image": "feature_band.jpg",
+      "alt": "A complementary rubber band",
+      "text": "A complementary rubber band"
+    },
+    {
+      "name": "pocket",
+      "image": "feature_pocket.jpg",
+      "alt": "A convenient pocket",
+      "text": "A convenient pocket"
+    }
+  ]
+}

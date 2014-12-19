@@ -1,0 +1,22 @@
+[class^="i-link--"],
+[class*=" i-link--"] {
+  text-decoration: none;
+}
+
+.i-link--dark {
+  @include state--link {
+    color: $c-grey4;
+  }
+  @include state--active {
+    color: $c-grey6;
+  }
+}
+
+.i-link--light {
+  @include state--link {
+    color: $c-grey3;
+  }
+  @include state--active {
+    color: $c-grey5;
+  }
+}

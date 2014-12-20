@@ -25,21 +25,23 @@ block template-body
       |  
       span.m-about__break notebuuk
 
-    p.m-about__text.t-lead: +dummy(20, "text")
+    p.m-about__text.t-lead notebuuk &mdash; a&nbsp;continuation of an award-winning 
+      a.i-link--underline(href="http://graduationprojects.eu/en/2013/Christian-Jansky") Graduation Project
+      |  &mdash; was born out of passion for honest craft, quality materials and unique design.
 
     ul.m-about__triplet.o-triplet
       li.o-triplet__item--1
         span.o-triplet__icon
           include ../svg/_build/icon_about1.svg
-        p.o-triplet__text: +dummy(25, "text")
+        p.o-triplet__text Each notebuuk is completely hand-made by us, two Design Master&rsquo;s students from Czech Republic. From folding the paper stock to final packaging, each one is unmistakeably original.
       li.o-triplet__item--2
         span.o-triplet__icon
           include ../svg/_build/icon_about2.svg
-        p.o-triplet__text: +dummy(25, "text")
+        p.o-triplet__text The juxtaposition of wood veneer inlay and book cloth being a&nbsp;subtle homage to the heydays of bookmaking, notebuuk is a&nbsp;celebration of what craft can achieve.
       li.o-triplet__item--3
         span.o-triplet__icon
           include ../svg/_build/icon_about3.svg
-        p.o-triplet__text: +dummy(25, "text")
+        p.o-triplet__text Doing away with the flimsy, over-bleached papers, notebuuks are proud to use eco-certified, recycled paper stock of multiple shades for all the needs in the world.
 
     .m-about__background
       include partials/_icons
@@ -47,25 +49,26 @@ block template-body
   aside.o-peek
     .o-peek__content(style="background-image: url('assets/images/bg_stopmotion1b.jpg')")
 
-  section.m-features.l-wrap.l-wrap--big
-    h2.t-h2.t-h2--color 7 reasons to 
-      span.t-h2__underline fall in love
-    p.m-features__text.t-lead Each notebuuk is destined to be your companion with its pocket-friendly dimensions of 114&thinsp;&times;&thinsp;184&thinsp;mm.
+  section.m-features
+    .l-wrap.l-wrap--top-big
+      h2.t-h2.t-h2--color 7 reasons to 
+        span.t-h2__underline fall in love
+      p.m-features__text.t-lead Each notebuuk is destined to be your companion with its pocket-friendly dimensions of 114&thinsp;&times;&thinsp;184&thinsp;mm. On top of that, here are seven more explanations why you&rsquo;ll love it!
 
-  include partials/_carousel
+    include partials/_carousel
 
   footer.m-footer.l-wrap.l-wrap--big.o-section--light
     h2.t-h2 buuk yours 
       span.t-h2__underline now
     .m-footer__text
-      p Our first collection sold out in 4 days. Be there when there&rsquo;s a new one.
+      p Our first collection sold out in 4 days. Be there when there&rsquo;s a&nbsp;new one.
 
     .o-subscribe
       p.o-subscribe__text.o-iconed--left.ss-alarmclock Online store coming Q1 2015. Subscribe to get notified!
       include partials/_mailchimp.html
 
     .o-social
-      a(href="#").o-social__link
+      a(href="http://facebook.com/notebuuk.cz").o-social__link
         include ../svg/_build/icon_facebook.svg
         span.o-social__title Facebook
       a(href="#").o-social__link

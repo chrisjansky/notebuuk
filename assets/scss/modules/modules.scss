@@ -9,11 +9,10 @@
 .m-intro__more {
   position: absolute;
   bottom: em($ratio--l);
-  left: 0;
-  right: 0;
+  left: 25%;
+  right: 25%;
 
   text-align: center;
-  text-decoration: none;
 
   z-index: $index--m;
 
@@ -55,7 +54,7 @@
   .svg-parallel {
     left: 15%;
     top: -5%;
-    fill: $c-grey1;
+    fill: $c-grey4;
   }
   .svg-triangle {
     left: -2%;
@@ -70,13 +69,18 @@
   .svg-rectangle {
     right: -5%;
     bottom: 10%;
-    fill: $c-color1;
+    fill: $c-color1--light;
   }
 }
 
+.m-features {
+  color: $c-grey5;
+}
 .m-features__text {
   @include span-columns(8);
   @include shift(2);
+
+  margin-top: 0;
   
   text-align: center;
 }
@@ -85,7 +89,18 @@
   position: relative;
   overflow: hidden;
 
+  color: $c-grey7;
   text-align: center;
+}
+.m-footer__submit {
+  margin-left: em($ratio--s);
+  color: $c-color2;
+  @include state--hover {
+    color: $c-color1;
+  }
+  &:active {
+    color: $c-color1--black;
+  }
 }
 .m-footer__background {
   [class^="svg-"],
@@ -117,6 +132,6 @@
   .svg-rectangle {
     right: -10%;
     bottom: 10%;
-    stroke: $c-color1;
+    stroke: $c-color1--light;
   }
 }

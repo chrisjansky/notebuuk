@@ -180,15 +180,15 @@ gulp.task("svg-wipe", function() {
     .pipe(vinyl(del));
 });
 
-// Optimalize SVG.
-gulp.task("svg-optimalize", ["svg-wipe"], function() {
+// Optimize SVG.
+gulp.task("svg-optimize", ["svg-wipe"], function() {
   return gulp.src(config.paths.svg_source_glob)
     .pipe(plugins.imagemin())
     .pipe(gulp.dest(config.paths.svg));
 });
 
 // Render PNG fallbacks for SVG.
-gulp.task("svg", ["svg-optimalize"], function() {
+gulp.task("svg", ["svg-optimize"], function() {
   // WTF error, needs src with ".svg".
   return gulp.src(config.paths.svg_glob + ".svg")
     .pipe(plugins.svg2png())

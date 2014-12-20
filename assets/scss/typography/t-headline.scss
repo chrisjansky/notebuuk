@@ -29,9 +29,9 @@
   @include margin(em($ratio--s) null);
 }
 .t-h2--color {
-  color: $c-color1--light;
+  color: $c-color1;
   .t-h2__underline {
-    color: $c-color4--light;
+    color: $c-color4;
   }
 }
 .t-h2__underline {

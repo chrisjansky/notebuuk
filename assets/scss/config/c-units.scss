@@ -55,3 +55,4 @@ $ratio--b:   $unit--b;
 $ratio--s:   round(golden-ratio($unit--b, -1));
 $ratio--xs:  round(golden-ratio($unit--b, -2));
 $ratio--xxs: round(golden-ratio($unit--b, -3));
+$ratio--t:   round(golden-ratio($unit--b, -4));

@@ -23,7 +23,6 @@
   margin-top: em($ratio--l);
   p {
     margin-top: 0;
-    color: $c-grey5;
   }
 
   opacity: 0;
@@ -43,19 +42,28 @@
   top: 0;
   height: em(440);
 
+  transition: transform $duration--b $timing--b;
+
   @include padding(null em($ratio--l));
   @include pseudo-center--parent;
 
   @include state--link {
-    color: $c-color4--light;
+    color: $c-grey3; 
   }
   @include state--hover {
-    color: $c-color1--white;
+    color: $c-color1;
   }
 }
 .o-carousel__arrow--prev {
-  left: 15%;
+  left: 20%;
 }
 .o-carousel__arrow--next {
-  right: 15%;
+  right: 20%;
+}
+
+.arrow--is-disabled {
+  cursor: default;
+  @include state--all {
+    color: $c-grey3;
+  }
 }

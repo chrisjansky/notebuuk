@@ -60,3 +60,10 @@
 .o-carousel__arrow--next {
   right: 20%;
 }
+
+.arrow--is-disabled {
+  cursor: default;
+  @include state--all {
+    color: $c-grey3;
+  }
+}

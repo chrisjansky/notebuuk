@@ -2,7 +2,7 @@ extends templates/_basic
 
 block template-body
 
-  header.m-intro.o-hero(style="background-image: url('assets/images/bg_top1.jpg')")
+  header.m-intro.o-hero
     .o-hero__overlay
       .o-hero__content
         .m-intro__title
@@ -12,6 +12,7 @@ block template-body
           h1.t-h1 from paper 
             span.t-h1__underline with love
         p.m-intro__text.t-lead Say hello to a&nbsp;new brand of premium notebuuks, entirely hand-made, entirely awesome.
+    .m-intro__background.o-parallax(data-parallax)
 
     a(href="#about", data-scrollto).m-intro__more
       mark.o-mark.o-iconed--left.ss-down
@@ -46,8 +47,8 @@ block template-body
     .m-about__background
       include partials/_icons
 
-  aside.o-peek
-    .o-peek__content(style="background-image: url('assets/images/bg_stopmotion1b.jpg')")
+  aside.o-peek.m-opening
+    .m-opening__background.o-parallax(data-parallax)
 
   section.m-features
     .l-wrap.l-wrap--top-big
@@ -57,31 +58,32 @@ block template-body
 
     include partials/_carousel
 
-  footer.m-footer.l-wrap.l-wrap--big.o-section--light
-    h2.t-h2 buuk yours 
-      span.t-h2__underline now
-    .m-footer__text
-      p Our first collection sold out in 4 days. Be there when there&rsquo;s a&nbsp;new one.
+  footer.m-footer.o-section--light
+    .m-footer__foreground.l-wrap.l-wrap--big
+      h2.t-h2 buuk yours 
+        span.t-h2__underline now
+      .m-footer__text
+        p Our first collection sold out in 4 days. Be there when there&rsquo;s a&nbsp;new one.
 
-    .o-subscribe
-      p.o-subscribe__text.o-iconed--left.ss-alarmclock Online store coming Q1 2015. Subscribe to get notified!
-      include partials/_mailchimp.html
+      .o-subscribe
+        p.o-subscribe__text.o-iconed--left.ss-alarmclock Online store coming Q1 2015. Subscribe to get notified!
+        include partials/_mailchimp.html
 
-    .o-social
-      a(href="http://facebook.com/notebuuk.cz").o-social__link
-        include ../svg/_build/icon_facebook.svg
-        span.o-social__title Facebook
-      a(href="#").o-social__link
-        include ../svg/_build/icon_instagram.svg
-        span.o-social__title Instagram
+      .o-social
+        a(href="http://facebook.com/notebuuk.cz").o-social__link
+          include ../svg/_build/icon_facebook.svg
+          span.o-social__title Facebook
+        a(href="#").o-social__link
+          include ../svg/_build/icon_instagram.svg
+          span.o-social__title Instagram
 
-    .o-credit
-      .o-credit__authors.t-small Project of 
-        a.i-link--dark(href="http://chrisjansky.cz", rel="author") Christian Jánský
-        |  &amp; 
-        a.i-link--dark(href="http://terezina.cz", rel="author") Tereza Čižmárová
-      small.o-credit__tiny.t-tiny Photography by 
-        a.i-link--light(href="http://filipberanek.com") Filip Beránek
+      .o-credit
+        .o-credit__authors.t-small Project of 
+          a.i-link--dark(href="http://chrisjansky.cz", rel="author") Christian Jánský
+          |  &amp; 
+          a.i-link--dark(href="http://terezina.cz", rel="author") Tereza Čižmárová
+        small.o-credit__tiny.t-tiny Photography by 
+          a.i-link--light(href="http://filipberanek.com") Filip Beránek
 
     .m-footer__background
       include partials/_icons

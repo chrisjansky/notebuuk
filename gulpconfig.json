@@ -33,7 +33,8 @@
     "kss_css": "assets/css/styleguide.css"
   },
   "files": [
-    "assets/fonts/*"
+    "assets/fonts/*",
+    "assets/favicon.ico"
   ],
   "styleguide": [
     "assets/kss/assets/prism.css"

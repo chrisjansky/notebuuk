@@ -1,8 +1,8 @@
 .o-hero {
   position: relative;
-  height: 100vh;
 
-  background: no-repeat center / cover;
+  height: 100vh;
+  min-height: em(500);
 }
 
 .o-hero__overlay {

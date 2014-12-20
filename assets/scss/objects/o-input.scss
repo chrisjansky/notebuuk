@@ -6,12 +6,12 @@
   background-color: white;
 
   border: none;
-  border-bottom: $line--b solid white;
+  border-bottom: $line--b solid $c-grey2;
 
   font-size: em($unit--m);
   
   @include state--hover {
-    border-bottom-color: $c-grey3;
+    border-bottom-color: $c-grey4;
   }
   @include state--focus {
     border-bottom-color: $c-color2;

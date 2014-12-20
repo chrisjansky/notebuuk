@@ -2,7 +2,7 @@
   @include padding(null em($ratio--xl));
 }
 .o-carousel__item {
-  width: em(440);
+  width: em($width--b);
 
   @include padding(null em($ratio--b));
   &:nth-child(1n) {
@@ -40,7 +40,7 @@
 [class*=" o-carousel__arrow"] {
   position: absolute;
   top: 0;
-  height: em(440);
+  height: em($width--b);
 
   transition: transform $duration--b $timing--b;
 

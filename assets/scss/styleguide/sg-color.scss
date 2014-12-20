@@ -24,7 +24,7 @@
   display: inline-block;
   position: relative;
   border-radius: 50%;
-  margin: em($ratio--m);
+  margin: em($ratio--b);
 }
 
 .sg-color__outline--small {
@@ -43,8 +43,8 @@
 }
 
 .sg-color__solid {
-  width: em($ratio--xxl);
-  height: em($ratio--xxl);
+  width: em($ratio--h);
+  height: em($ratio--h);
 }
 
 // Fields.
@@ -79,13 +79,13 @@
 }
 
 $colors__groups: 1 2 3 4;
-$colors__shades: bright light basic dim dark;
+$colors__shades: "white", "light", "basic", "dark", "black";
 
 $colors__palette:
-  $c-color1--bright $c-color1--light $c-color1 $c-color1--dim $c-color1--dark
-  $c-color2--bright $c-color2--light $c-color2 $c-color2--dim $c-color2--dark
-  $c-color3--bright $c-color3--light $c-color3 $c-color3--dim $c-color3--dark
-  $c-color4--bright $c-color4--light $c-color4 $c-color4--dim $c-color4--dark;
+  $c-color1--white $c-color1--light $c-color1 $c-color1--dark $c-color1--black
+  $c-color2--white $c-color2--light $c-color2 $c-color2--dark $c-color2--black
+  $c-color3--white $c-color3--light $c-color3 $c-color3--dark $c-color3--black
+  $c-color4--white $c-color4--light $c-color4 $c-color4--dark $c-color4--black;
 
 @each $group in $colors__groups {
   $currentGroup: index($colors__groups, $group);

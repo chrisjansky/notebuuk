@@ -13,14 +13,14 @@ html.no-js(lang="en")
 
       link(href="assets/favicon.ico", rel="shortcut icon")
 
-      script(src="//use.typekit.net/xsp8gmu.js")
-      script try{Typekit.load();}catch(e){}
-
       <!-- build:css assets/css/style-min.css -->
       link(rel="stylesheet", href="bower_components/normalize-css/normalize.css")
       link(rel="stylesheet", href="bower_components/idangerous-swiper/dist/idangerous.swiper.css")
       link(rel="stylesheet", href="assets/css/style.css")
       <!-- endbuild -->
+      
+      script(src="//use.typekit.net/xsp8gmu.js")
+      script try{Typekit.load();}catch(e){}
 
   body
     include /bower_components/chj-framework/assets/jade/mixins/_dummy
@@ -42,8 +42,8 @@ html.no-js(lang="en")
       script(src="assets/js/nb-base.js")
       script(src="assets/js/nb-scrollto.js")
       script(src="assets/js/nb-carousel.js")
+      script(src="assets/js/nb-parallax.js")
 
       script(src="bower_components/chj-framework/assets/js/chj-external.js")
       script(src="bower_components/chj-framework/assets/js/chj-detect.js")
-      script(src="bower_components/chj-framework/assets/js/chj-parallax.js")
       <!-- endbuild -->

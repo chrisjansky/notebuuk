@@ -22,6 +22,9 @@
     }
   }
 }
+.m-intro__background {
+  background-image: url("../images/bg_top1.jpg");
+}
 
 .m-about {
   position: relative;
@@ -73,8 +76,13 @@
   }
 }
 
+.m-opening__background {
+  background-image: url("../images/bg_stopmotion1b.jpg");
+}
+
 .m-features {
   color: $c-grey5;
+  background-color: white;
 }
 .m-features__text {
   @include span-columns(8);
@@ -91,6 +99,10 @@
 
   color: $c-grey7;
   text-align: center;
+}
+.m-footer__foreground {
+  position: relative;
+  z-index: $index--b;
 }
 .m-footer__submit {
   margin-left: em($ratio--s);
@@ -111,11 +123,11 @@
   }
   .svg-circle {
     left: 55%;
-    top: -10%;
+    top: -15%;
     stroke: $c-color3--light;
   }
   .svg-parallel {
-    left: 10%;
+    left: 7.5%;
     bottom: -20%;
     stroke: $c-grey3;
   }
@@ -125,8 +137,8 @@
     stroke: $c-color2--light;
   }
   .svg-pie {
-    right: -3%;
-    top: 20%;
+    right: -5%;
+    top: 15%;
     stroke: $c-color4--light;
   }
   .svg-rectangle {

@@ -4,43 +4,43 @@
       "name": "front",
       "image": "feature_front.jpg",
       "alt": "An unique hardcover",
-      "text": "An unique hardcover with a veneer inlay"
+      "text": "An unique hardcover combining vibrant book cloth with a&nbsp;veneer inlay"
     },
     {
       "name": "screenprint",
       "image": "feature_screenprint.jpg",
       "alt": "A custom screen print",
-      "text": "A custom screen print"
+      "text": "A&nbsp;lush screen print featuring custom graphics"
     },
     {
       "name": "calendar",
       "image": "feature_calendar.jpg",
       "alt": "A fold-out calendar",
-      "text": "A fold-out calendar"
+      "text": "A super handy fold-out calendar to organize your year"
     },
     {
       "name": "binding",
       "image": "feature_binding.jpg",
       "alt": "Handsewn binding",
-      "text": "Handsewn binding"
+      "text": "Exceptionally sturdy, yet flexible, handsewn binding"
     },
     {
       "name": "papers",
       "image": "feature_papers.jpg",
-      "alt": "Special recycled papers",
-      "text": "Special recycled papers"
+      "alt": "Special recycled paper stock",
+      "text": "Two shades of recycled paper &mdash; for notes and sketches, plus a bookmark"
     },
     {
       "name": "band",
       "image": "feature_band.jpg",
       "alt": "A complementary rubber band",
-      "text": "A complementary rubber band"
+      "text": "A complementary rubber band to tame your notebuuk"
     },
     {
       "name": "pocket",
       "image": "feature_pocket.jpg",
       "alt": "A convenient pocket",
-      "text": "A convenient pocket"
+      "text": "A convenient pocket to keep those loose things around"
     }
   ]
 }

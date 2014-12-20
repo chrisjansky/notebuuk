@@ -9,6 +9,17 @@
   }
 }
 
+.l-wrap--top-big {
+  padding-top: em($ratio--m);
+
+  @include media($tablet--portrait) {
+    padding-top: em($ratio--l);
+  }
+  @include media($tablet--landscape__up) {
+    padding-top: em($ratio--xl);
+  }
+}
+
 .l-wrap--bottom-big {
   padding-bottom: em($ratio--m);
 

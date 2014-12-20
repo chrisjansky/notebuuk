@@ -48,6 +48,13 @@
   [class^="svg-"],
   [class*=" svg-"] {
     position: absolute;
+
+    transition: transform $duration--b $timing--xf;
+    transform: scale(0) rotate(35deg);
+
+    .shapes--are-active & {
+      transform: scale(1) rotate(0);
+    }
   }
   .svg-circle {
     left: 15%;
@@ -63,16 +70,22 @@
     left: -2%;
     top: 35%;
     fill: $c-color2--light;
+
+    transition-delay: $duration--l;
   }
   .svg-pie {
     right: -1%;
     top: 20%;
     fill: $c-color4--light;
+
+    transition-delay: $duration--s;
   }
   .svg-rectangle {
     right: -5%;
     bottom: 10%;
     fill: $c-color1--light;
+
+    transition-delay: $duration--l;
   }
 }
 

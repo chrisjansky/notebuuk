@@ -1,5 +1,4 @@
-[class^="i-link--"],
-[class*=" i-link--"] {
+a {
   text-decoration: none;
 }
 
@@ -18,5 +17,22 @@
   }
   @include state--active {
     color: $c-grey5;
+  }
+}
+
+.i-link--underline {
+  border-bottom: $line--b solid;
+
+  @include state--link {
+    color: white;
+    border-color: rgba(white, .25);
+  }
+  &:hover {
+    color: $c-color3--white;
+    border-color: $c-color3--white;
+  }
+  &:active {
+    color: $c-color4--white;
+    border-color: $c-color4--white;
   }
 }

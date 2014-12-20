@@ -13,7 +13,7 @@ block template-body
           - var n = 0
           while n < colorCount.main
             .sg-color__item
-              each shade in ["bright", "light", "basic", "dim", "dark"]
+              each shade in ["white", "light", "basic", "dark", "black"]
                 if (type === "outline--small" || type === "outline")
                   .sg-color__swatch(class="sg-color__#{type} sg-border-color#{n + 1}--#{shade}")
                 else
@@ -39,7 +39,7 @@ block template-body
 
         - var n = 0
         while n < colorCount.main
-          each shade in ["bright", "light", "basic", "dim", "dark"]
+          each shade in ["white", "light", "basic", "dark", "black"]
             .sg-color__field(class="sg-background-color#{n + 1}--#{shade}")
               .sg-color__overlay--big
                 span.sg-color__glyph--white Aa

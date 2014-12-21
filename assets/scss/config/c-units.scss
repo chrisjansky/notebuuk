@@ -10,6 +10,7 @@ $unit--xs: 12;
 // Spacing
 $spacing--m: 2;
 $spacing--b: 1.5;
+$spacing--s: 1.25;
 
 // Radius
 $radius--l: 4px;
@@ -37,8 +38,8 @@ $index--xs:  10;
 $index--xxs: 1;
 
 // Widths
-$width--xxl: 800;
 $width--b: 400;
+$width--s: 220;
 
 // Heights
 $height--m: round(golden-ratio($unit--b * $spacing--m, 1));

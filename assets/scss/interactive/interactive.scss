@@ -11,6 +11,15 @@ a {
   }
 }
 
+.i-link--black {
+  @include state--link {
+    color: $c-grey6;
+  }
+  @include state--active {
+    color: $c-grey8;
+  }
+}
+
 .i-link--light {
   @include state--link {
     color: $c-grey3;

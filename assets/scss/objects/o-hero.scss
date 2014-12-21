@@ -2,7 +2,10 @@
   position: relative;
 
   height: 100vh;
-  min-height: em(500);
+
+  @include media($tablet__up) {
+    min-height: em(480);
+  }
 }
 
 .o-hero__overlay {
@@ -17,7 +20,14 @@
 }
 
 .o-hero__content {
-  // @include padding(null em($ratio--b));
+  @include padding(null em($ratio--m));
+
+  // @include media($phone--landscape__up) {
+  //   @include padding(null em($ratio--m));
+  // }
+
+  margin-left: em(-20); // Offseting white-space from pseudo-centering
+
   @include collapse-children;
   @include pseudo-center--child;
   white-space: normal;

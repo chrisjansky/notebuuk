@@ -1,5 +1,5 @@
 .l-wrap--huge {
-  @include padding(em($ratio--xl) null);
+  @include padding(em($ratio--l) null);
 
   @include media($tablet--portrait) {
     @include padding(em($ratio--xxl) null);
@@ -10,23 +10,23 @@
 }
 
 .l-wrap--top-big {
-  padding-top: em($ratio--m);
+  padding-top: em($ratio--l);
 
-  @include media($tablet--portrait) {
-    padding-top: em($ratio--l);
-  }
-  @include media($tablet--landscape__up) {
+  @include media($tablet__up) {
     padding-top: em($ratio--xl);
   }
+  // @include media($tablet--landscape__up) {
+  //   padding-top: em($ratio--xl);
+  // }
 }
 
 .l-wrap--bottom-big {
-  padding-bottom: em($ratio--m);
+  padding-bottom: em($ratio--l);
 
-  @include media($tablet--portrait) {
-    padding-bottom: em($ratio--l);
-  }
-  @include media($tablet--landscape__up) {
+  @include media($tablet__up) {
     padding-bottom: em($ratio--xl);
   }
+  // @include media($tablet--landscape__up) {
+  //   padding-bottom: em($ratio--xl);
+  // }
 }

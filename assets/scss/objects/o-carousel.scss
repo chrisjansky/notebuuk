@@ -1,10 +1,24 @@
 .o-carousel {
-  @include padding(null em($ratio--xl));
-}
-.o-carousel__item {
-  width: em($width--b);
+  user-select: none;
+  // Important to set box-sizing!
+  box-sizing: content-box;
 
-  @include padding(null em($ratio--b));
+  // @include padding(null em($ratio--xl));
+}
+
+.o-carousel__list {
+  @include reset-list;
+  &:hover {
+    cursor: grab;
+  }
+}
+
+.o-carousel__item {
+  // width: em($width--b);
+  width: em($width--s);
+
+  // @include padding(null em($ratio--b));
+  @include padding(null em($ratio--xs));
   &:nth-child(1n) {
     color: $c-color1;
   }
@@ -20,9 +34,10 @@
 }
 .o-carousel__text {
   text-align: center;
-  margin-top: em($ratio--l);
+  // margin-top: em($ratio--l);
+  margin-top: em($ratio--m);
   p {
-    margin-top: 0;
+    margin: 0;
   }
 
   opacity: 0;
@@ -39,12 +54,16 @@
 [class^="o-carousel__arrow"],
 [class*=" o-carousel__arrow"] {
   position: absolute;
-  top: 0;
-  height: em($width--b);
+  top: em(242); // Magic alignment with heading
+  // top: 0;
+  // height: em($width--b);
+
+  text-decoration: none; 
 
   transition: transform $duration--b $timing--b;
 
-  @include padding(null em($ratio--l));
+  // @include padding(null em($ratio--l));
+  @include padding(null em($ratio--m));
   @include pseudo-center--parent;
 
   @include state--link {
@@ -55,10 +74,12 @@
   }
 }
 .o-carousel__arrow--prev {
-  left: 20%;
+  // left: 20%;
+  left: 0;
 }
 .o-carousel__arrow--next {
-  right: 20%;
+  // right: 20%;
+  right: 0;
 }
 
 .arrow--is-disabled {

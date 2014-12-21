@@ -25,7 +25,7 @@ $default__leading: $spacing--b;
        url("../fonts/Apercu.woff") format("woff"),
        url("../fonts/Apercu.ttf") format("truetype"),
        url("../fonts/Apercu.svg#apercu") format("svg");
-  font-weight: 500;
+  font-weight: $font__sans--regular;
   font-style: normal;
 }
 @font-face {
@@ -35,7 +35,7 @@ $default__leading: $spacing--b;
        url("../fonts/Apercu-Medium.woff") format("woff"),
        url("../fonts/Apercu-Medium.ttf") format("truetype"),
        url("../fonts/Apercu-Medium.svg#apercu") format("svg");
-  font-weight: 600;
+  font-weight: $font__sans--medium;
   font-style: normal;
 }
 @font-face {
@@ -45,6 +45,6 @@ $default__leading: $spacing--b;
        url("../fonts/apercu-mono-webfont.woff") format("woff"),
        url("../fonts/apercu-mono-webfont.ttf") format("truetype"),
        url("../fonts/apercu-mono-webfont.svg#apercu-mono") format("svg");
-  font-weight: 500;
+  font-weight: $font__mono--regular;
   font-style: normal;
 }

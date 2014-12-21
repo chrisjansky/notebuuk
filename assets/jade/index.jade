@@ -5,12 +5,12 @@ block template-body
   header.m-intro.o-hero
     .o-hero__overlay
       .o-hero__content
-        .m-intro__title
+        .m-intro__top
           strong.o-logo
             include ../svg/_build/logo_small.svg
             span.o-logo__title notebuuk
-          h1.t-h1 from paper 
-            span.t-h1__underline with love
+          h1.t-h1.m-intro__title from paper 
+            span.t-h1__underline.m-intro__underline with love
         p.m-intro__text.t-lead Say hello to a&nbsp;new brand of premium notebuuks, entirely hand-made, entirely awesome.
     .m-intro__background.o-parallax(data-parallax)
 
@@ -32,15 +32,15 @@ block template-body
 
     ul.m-about__triplet.o-triplet
       li.o-triplet__item--1
-        span.o-triplet__icon
+        div.o-triplet__icon
           include ../svg/_build/icon_about1.svg
         p.o-triplet__text Each notebuuk is completely hand-made by Christian &amp; Tereza, two Design Master&rsquo;s students from Czech Republic. From folding the paper stock to final packaging, each notebuuk is unmistakeably original.
       li.o-triplet__item--2
-        span.o-triplet__icon
+        div.o-triplet__icon
           include ../svg/_build/icon_about2.svg
         p.o-triplet__text The juxtaposition of wood veneer inlay and book cloth being a&nbsp;subtle homage to the heydays of bookmaking, notebuuk is a&nbsp;celebration of what craft can achieve.
       li.o-triplet__item--3
-        span.o-triplet__icon
+        div.o-triplet__icon
           include ../svg/_build/icon_about3.svg
         p.o-triplet__text Doing away with the flimsy, over-bleached papers, notebuuks are proud to use eco-certified, recycled paper stock of multiple shades for all the needs in the world.
 
@@ -54,7 +54,7 @@ block template-body
     .l-wrap.l-wrap--top-big
       h2.t-h2.t-h2--color 7 reasons to 
         span.t-h2__underline fall in love
-      p.m-features__text.t-lead Each notebuuk is destined to be your companion with its pocket-friendly dimensions of 114&thinsp;&times;&thinsp;184&thinsp;mm. On top of that, here are seven more explanations why you&rsquo;ll love it!
+      p.m-features__text.t-lead Each notebuuk is destined to be your companion with its pocket-friendly dimensions of 114&thinsp;&times;&thinsp;184&#8239;mm. On top of that, here are seven more explanations why you&rsquo;ll love it!
 
     include partials/_carousel
 
@@ -70,10 +70,10 @@ block template-body
         include partials/_mailchimp.html
 
       .o-social
-        a(href="http://facebook.com/notebuuk.cz").o-social__link
+        a.i-link--black(href="http://facebook.com/notebuuk.cz").o-social__link
           include ../svg/_build/icon_facebook.svg
           span.o-social__title Facebook
-        a(href="#").o-social__link
+        a.i-link--black(href="#").o-social__link
           include ../svg/_build/icon_instagram.svg
           span.o-social__title Instagram
 

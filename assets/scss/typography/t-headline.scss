@@ -10,18 +10,28 @@
 .t-h1 {
   font-family: $font__serif;
   font-weight: $font__serif--light;
-  font-size: em($unit--xxl);
-  line-height: 1.1;
-  @include margin(em($ratio--s) null);
+  // font-size: em($unit--xxl);
+
+  font-size: em($unit--xl);
+  line-height: $spacing--s;
+
+  @include margin(em($ratio--xxs) null);
+  // @include margin(em($ratio--s) null);
 }
 .t-h1__underline {
-  border-bottom: $line--l solid;
+  // border-bottom: $line--l solid;
+  // @include media($phone) {
+    // display: inline-block;
+  // }
+  border-bottom-style: solid;
+  border-bottom-width: $line--m;
   vertical-align: 28%; // Magic number
 }
 .t-h2 {
   font-family: $font__serif;
   font-weight: $font__serif--regular;
-  font-size: em($ratio--l);
+  // font-size: em($ratio--l);
+  font-size: em($unit--l);
   line-height: 1.2;
 
   text-align: center;
@@ -35,7 +45,9 @@
   }
 }
 .t-h2__underline {
-  border-bottom: $line--m solid;
+  border-bottom-style: solid;
+  border-bottom-width: $line--b;
+  // border-bottom-width: $line--m;
   vertical-align: 26%;
 }
 .t-h3 {

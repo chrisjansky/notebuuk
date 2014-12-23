@@ -1,0 +1,102 @@
+.m-about {
+  position: relative;
+  overflow: hidden;
+
+  color: white;
+  background-color: $c-color1--black;
+}
+.m-about__foreground {
+  position: relative;
+  z-index: $index--b;
+}
+.m-about__break {
+  display: block;
+}
+
+.m-about__background {
+  @include media($phone) {
+    display: none;
+  }
+}
+
+[class^="m-about__shape"],
+[class*=" m-about__shape"] {
+  position: absolute;
+
+  @include media($tablet--portrait) {
+    transform: scale(.65);
+  }
+
+  .body--is-desktop & {
+    transition: transform $duration--b $timing--xf;
+  } 
+}
+
+.shape--is-passive {
+  transform: scale(0) rotate(35deg);
+}
+.shape--is-active {
+  transform: scale(1) rotate(0);
+}
+
+.m-about__shape--circle {
+  fill: $c-color3--light;
+}
+.m-about__shape--parallel {
+  fill: $c-grey4;
+}
+.m-about__shape--triangle {
+  fill: $c-color2--light;
+}
+.m-about__shape--pie {
+  fill: $c-color4--light;
+}
+.m-about__shape--rectangle {
+  fill: $c-color1--light;
+}
+
+@include media($tablet) {
+  .m-about__shape--circle {
+    left: 20%;
+    bottom: -7.5%;
+  }
+  .m-about__shape--parallel {
+    left: 5%;
+    top: -12.5%;
+  }
+  .m-about__shape--triangle {
+    left: -12.5%;
+    top: 32.5%;
+  }
+  .m-about__shape--pie {
+    right: -10%;
+    top: 5%;
+  }
+  .m-about__shape--rectangle {
+    right: -22.5%;
+    bottom: 10%;
+  }
+}
+
+@include media($desktop) {
+  .m-about__shape--circle {
+    left: 15%;
+    bottom: -7%;
+  }
+  .m-about__shape--parallel {
+    left: 15%;
+    top: -5%;
+  }
+  .m-about__shape--triangle {
+    left: -2%;
+    top: 35%;
+  }
+  .m-about__shape--pie {
+    right: -1%;
+    top: 20%;
+  }
+  .m-about__shape--rectangle {
+    right: -5%;
+    bottom: 10%;
+  } 
+}

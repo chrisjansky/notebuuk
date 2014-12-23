@@ -1,0 +1,125 @@
+.m-footer {
+  position: relative;
+  overflow: hidden;
+
+  color: $c-grey6;
+  text-align: center;
+}
+
+.m-footer__foreground {
+  position: relative;
+  z-index: $index--b;
+}
+
+.m-footer__submit {
+  display: inline-block;
+
+  @include media($phone) {
+    margin-top: em($ratio--s);
+  }
+  @include media($tablet__up) {
+    margin-left: em($ratio--s);
+  }
+
+  color: $c-color2;
+  @include state--hover {
+    color: $c-color1;
+  }
+  &:active {
+    color: $c-color1--black;
+  }
+}
+
+.m-footer__text {
+  @include media($tablet--portrait) {
+    @include span-columns(4);
+    @include shift(1);
+  }
+  @include media($nb--large) {
+    @include span-columns(6);
+    @include shift(1);
+  }
+  // @include media($tablet--up) {
+    // margin-bottom: em($ratio--m);
+  // }
+}
+
+.m-footer__background {
+  @include media($phone) {
+    display: none;
+  }
+}
+
+[class^="m-footer__shape"],
+[class*=" m-footer__shape"] {
+  position: absolute;
+  fill: none;
+  stroke-width: 3;
+
+  @include media($tablet--portrait) {
+    transform: scale(.45);
+    stroke-width: 5;
+  }
+}
+
+.m-footer__shape--circle {
+  stroke: $c-color3--light;
+}
+.m-footer__shape--parallel {
+  stroke: $c-grey3;
+}
+.m-footer__shape--triangle {
+  stroke: $c-color2--light;
+}
+.m-footer__shape--pie {
+  stroke: $c-color4--light;
+}
+.m-footer__shape--rectangle {
+  stroke: $c-color1--light;
+}
+
+@include media($tablet) {
+  .m-footer__shape--circle {
+    left: 15%;
+    top: -12.5%;
+  }
+  .m-footer__shape--parallel {
+    left: 10%;
+    bottom: -20%;
+  }
+  .m-footer__shape--triangle {
+    left: -5%;
+    top: 10%;
+  }
+  .m-footer__shape--pie {
+    right: -5%;
+    top: 5%;
+  }
+  .m-footer__shape--rectangle {
+    right: -10%;
+    bottom: 10%;
+  }
+}
+
+@include media($desktop) {
+  .m-footer__shape--circle {
+    left: 55%;
+    top: -15%;
+  }
+  .m-footer__shape--parallel {
+    left: 7.5%;
+    bottom: -20%;
+  }
+  .m-footer__shape--triangle {
+    left: -5%;
+    top: 10%;
+  }
+  .m-footer__shape--pie {
+    right: -5%;
+    top: 15%;
+  }
+  .m-footer__shape--rectangle {
+    right: -10%;
+    bottom: 10%;
+  }
+}

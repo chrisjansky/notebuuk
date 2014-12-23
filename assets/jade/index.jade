@@ -7,7 +7,8 @@ block template-body
       .o-hero__content
         .m-intro__top
           strong.o-logo
-            include ../svg/_build/logo_small.svg
+            svg.svg--stretch
+              use(xlink:href="#logo_small")
             span.o-logo__title notebuuk
           h1.t-h1.m-intro__title from paper 
             span.t-h1__underline.m-intro__underline with love
@@ -20,39 +21,52 @@ block template-body
           span.o-mark__tracked Mor
           | e
 
-  main#about.l-wrap.l-wrap--huge.m-about(data-waypoint)
-    h2.t-h2.m-about__title meet your 
-      span.t-h2__underline new favourite
-      |  
-      span.m-about__break notebuuk
+  main#about.m-about
+    .m-about__foreground.l-wrap.l-wrap--huge
+      h2.t-h2.m-about__title meet your 
+        span.t-h2__underline new favourite
+        |  
+        span.m-about__break notebuuk
 
-    p.m-about__text.t-lead notebuuk &mdash; a&nbsp;continuation of an award-winning 
-      a.i-link--underline(href="http://graduationprojects.eu/en/2013/Christian-Jansky") Graduation Project
-      |  &mdash; was born out of passion for honest craft, quality materials and unique design.
+      p.m-about__text.t-lead notebuuk &mdash; a&nbsp;continuation of an award-winning 
+        a.i-link--underline(href="http://graduationprojects.eu/en/2013/Christian-Jansky") Graduation Project
+        |  &mdash; was born out of passion for honest craft, quality materials and unique design.
 
-    ul.m-about__triplet.o-triplet
-      li.o-triplet__item--1
-        div.o-triplet__icon
-          include ../svg/_build/icon_about1.svg
-        p.o-triplet__text Each notebuuk is completely hand-made by Christian &amp; Tereza, two Design Master&rsquo;s students from Czech Republic. From folding the paper stock to final packaging, each notebuuk is unmistakeably original.
-      li.o-triplet__item--2
-        div.o-triplet__icon
-          include ../svg/_build/icon_about2.svg
-        p.o-triplet__text The juxtaposition of wood veneer inlay and book cloth being a&nbsp;subtle homage to the heydays of bookmaking, notebuuk is a&nbsp;celebration of what craft can achieve.
-      li.o-triplet__item--3
-        div.o-triplet__icon
-          include ../svg/_build/icon_about3.svg
-        p.o-triplet__text Doing away with the flimsy, over-bleached papers, notebuuks are proud to use eco-certified, recycled paper stock of multiple shades for all the needs in the world.
+      ul.m-about__triplet.o-triplet
+        li.o-triplet__item--1
+          div.o-triplet__icon
+            svg.svg-about--1
+              use(xlink:href="#icon_about1")
+          p.o-triplet__text Each notebuuk is completely hand-made by Christian &amp; Tereza, two Design Master&rsquo;s students from Czech Republic. From folding the paper stock to final packaging, each notebuuk is unmistakeably original.
+        li.o-triplet__item--2
+          div.o-triplet__icon
+            svg.svg-about--2
+              use(xlink:href="#icon_about2")
+          p.o-triplet__text The juxtaposition of wood veneer inlay and book cloth being a&nbsp;subtle homage to the heydays of bookmaking, notebuuk is a&nbsp;celebration of what craft can achieve.
+        li.o-triplet__item--3
+          div.o-triplet__icon
+            svg.svg-about--3
+              use(xlink:href="#icon_about3")
+          p.o-triplet__text Doing away with the flimsy, over-bleached papers, notebuuks are proud to use eco-certified, recycled paper stock of multiple shades for all the needs in the world.
 
-    .m-about__background
-      include partials/_icons
+    #js-shape-group.m-about__background
+      svg.m-about__shape--circle.svg-shape--circle.js-shape
+        use(xlink:href="#shape_circle")
+      svg.m-about__shape--parallel.svg-shape--parallel.js-shape
+        use(xlink:href="#shape_parallel")
+      svg.m-about__shape--pie.svg-shape--pie.js-shape
+        use(xlink:href="#shape_pie")
+      svg.m-about__shape--rectangle.svg-shape--rectangle.js-shape
+        use(xlink:href="#shape_rectangle")
+      svg.m-about__shape--triangle.svg-shape--triangle.js-shape
+        use(xlink:href="#shape_triangle")
 
   aside.o-peek.m-opening
     .m-opening__background.o-parallax(data-parallax)
 
   section.m-features
     .l-wrap.l-wrap--top-big
-      h2.t-h2.t-h2--color 7 reasons to 
+      h2.t-h2.t-h2--primary 7 reasons to 
         span.t-h2__underline fall in love
       p.m-features__text.t-lead Each notebuuk is destined to be your companion with its pocket-friendly dimensions of 114&thinsp;&times;&thinsp;184&#8239;mm. On top of that, here are seven more explanations why you&rsquo;ll love it!
 
@@ -60,10 +74,9 @@ block template-body
 
   footer.m-footer.o-section--light
     .m-footer__foreground.l-wrap.l-wrap--big
-      h2.t-h2 buuk yours 
+      h2.t-h2.t-h2--secondary buuk yours 
         span.t-h2__underline now
-      .m-footer__text
-        p Our first collection sold out in 4 days. Be there when there&rsquo;s a&nbsp;new one.
+      p.m-footer__text.t-lead Our first collection sold out in 4 days. Be there when there&rsquo;s a&nbsp;new one.
 
       .o-subscribe
         p.o-subscribe__text.o-iconed--left.ss-alarmclock Online store coming Q1 2015. Subscribe to get notified!
@@ -71,10 +84,12 @@ block template-body
 
       .o-social
         a.i-link--black(href="http://facebook.com/notebuuk.cz").o-social__link
-          include ../svg/_build/icon_facebook.svg
+          svg.svg-social
+            use(xlink:href="#icon_facebook")
           span.o-social__title Facebook
-        a.i-link--black(href="#").o-social__link
-          include ../svg/_build/icon_instagram.svg
+        a.i-link--black(href="http://instagram.com/notebuuk").o-social__link
+          svg.svg-social
+            use(xlink:href="#icon_instagram")
           span.o-social__title Instagram
 
       .o-credit
@@ -86,4 +101,13 @@ block template-body
           a.i-link--light(href="http://filipberanek.com") Filip Beránek
 
     .m-footer__background
-      include partials/_icons
+      svg.m-footer__shape--circle.svg-shape--circle
+        use(xlink:href="#shape_circle")
+      svg.m-footer__shape--parallel.svg-shape--parallel
+        use(xlink:href="#shape_parallel")
+      svg.m-footer__shape--pie.svg-shape--pie
+        use(xlink:href="#shape_pie")
+      svg.m-footer__shape--rectangle.svg-shape--rectangle
+        use(xlink:href="#shape_rectangle")
+      svg.m-footer__shape--triangle.svg-shape--triangle
+        use(xlink:href="#shape_triangle")

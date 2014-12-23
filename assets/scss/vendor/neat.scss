@@ -19,3 +19,6 @@ $phone--landscape__up: new-breakpoint(min-width em(401));
 $tablet__up: new-breakpoint(min-width em(561));
 $tablet--portrait__down: new-breakpoint(max-width em(820));
 $tablet--landscape__up: new-breakpoint(min-width em(821));
+
+// Custom — tablet-landscape and desktop are the same
+$nb--large: new-breakpoint(min-width em(821), $columns__landscape);

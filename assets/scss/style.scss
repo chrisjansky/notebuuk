@@ -52,8 +52,13 @@
 @import "objects/o-input";
 @import "objects/o-icon";
 @import "objects/o-submit";
+@import "objects/o-triplet";
 
 // Modules
 @import "modules/modules";
+@import "modules/m-about";
+@import "modules/m-footer";
+
+@import "misc/svg";
 
 @import "styleguide/sg-color";

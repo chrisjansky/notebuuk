@@ -20,7 +20,11 @@
   // iOS reset.
   -webkit-appearance: none;
   &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 40px $c-grey2 inset;
+    -webkit-box-shadow: 0 0 0 $ratio--m $c-grey2 inset;
     border-bottom-color: $c-grey3;
+  }
+
+  @include media($tablet__up) {
+    min-width: em($width--b, $unit--m);
   }
 }

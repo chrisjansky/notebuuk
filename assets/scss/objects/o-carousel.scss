@@ -2,8 +2,6 @@
   user-select: none;
   // Important to set box-sizing!
   box-sizing: content-box;
-
-  // @include padding(null em($ratio--xl));
 }
 
 .o-carousel__list {
@@ -14,11 +12,21 @@
 }
 
 .o-carousel__item {
-  // width: em($width--b);
   width: em($width--s);
-
-  // @include padding(null em($ratio--b));
   @include padding(null em($ratio--xs));
+
+  @include media($tablet__up) {
+    @include padding(null em($ratio--b));
+  }
+  
+  @include media($tablet--portrait) {
+    width: em($width--b);
+  }
+
+  @include media($nb--large) {
+    width: em($width--m);
+  }
+
   &:nth-child(1n) {
     color: $c-color1;
   }
@@ -34,8 +42,8 @@
 }
 .o-carousel__text {
   text-align: center;
-  // margin-top: em($ratio--l);
   margin-top: em($ratio--m);
+
   p {
     margin: 0;
   }
@@ -55,14 +63,21 @@
 [class*=" o-carousel__arrow"] {
   position: absolute;
   top: em(242); // Magic alignment with heading
-  // top: 0;
-  // height: em($width--b);
+
+  @include media($tablet__up) {
+    top: 0;
+  }
+  @include media($tablet--portrait) {
+    height: em($width--b);
+  }
+  @include media($nb--large) {
+    height: em($width--m);
+  }
 
   text-decoration: none; 
 
   transition: transform $duration--b $timing--b;
 
-  // @include padding(null em($ratio--l));
   @include padding(null em($ratio--m));
   @include pseudo-center--parent;
 
@@ -74,12 +89,22 @@
   }
 }
 .o-carousel__arrow--prev {
-  // left: 20%;
   left: 0;
+  @include media($tablet--portrait) {
+    left: 10%;
+  }
+  @include media($nb--large) {
+    left: 15%;
+  }
 }
 .o-carousel__arrow--next {
-  // right: 20%;
   right: 0;
+  @include media($tablet--portrait) {
+    right: 10%;
+  }
+  @include media($nb--large) {
+    right: 15%;
+  }
 }
 
 .arrow--is-disabled {

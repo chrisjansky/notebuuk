@@ -1,5 +1,9 @@
-#mc_embed_signup input.mce_inline_error {
-  border-color: $c-color4 !important;
+#mc_embed_signup {
+  clear: both;
+
+  input.mce_inline_error {
+    border-color: $c-color4 !important;
+  }
 }
 
 #mce-success-response {
@@ -7,4 +11,14 @@
 
   font-family: $font__sans;
   font-size: em($unit--s);
+
+  @include media($tablet--portrait) {
+    @include span-columns(4);
+    @include shift(1);
+  }
+
+  @include media($nb--large) {
+    @include span-columns(4);
+    @include shift(2);
+  }
 }

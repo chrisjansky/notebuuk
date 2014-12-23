@@ -1,10 +1,14 @@
+.l-wrap {
+  max-width: em($width--xl);
+}
+
 .l-wrap--huge {
   @include padding(em($ratio--l) null);
 
-  @include media($tablet--portrait) {
-    @include padding(em($ratio--xxl) null);
+  @include media($tablet) {
+    @include padding(em($ratio--xxl) null em($ratio--h));
   }
-  @include media($tablet--landscape__up) {
+  @include media($desktop) {
     @include padding(em($ratio--h) null);
   }
 }
@@ -15,9 +19,6 @@
   @include media($tablet__up) {
     padding-top: em($ratio--xl);
   }
-  // @include media($tablet--landscape__up) {
-  //   padding-top: em($ratio--xl);
-  // }
 }
 
 .l-wrap--bottom-big {
@@ -26,7 +27,4 @@
   @include media($tablet__up) {
     padding-bottom: em($ratio--xl);
   }
-  // @include media($tablet--landscape__up) {
-  //   padding-bottom: em($ratio--xl);
-  // }
 }

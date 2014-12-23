@@ -2,25 +2,31 @@
   display: inline-block;
 }
 .m-intro__text {
-  // @include span-columns(6);
-  // @include shift(3);
-  // margin-bottom: em($ratio--l);
+  @include media($tablet--portrait) {
+    @include span-columns(4);
+    @include shift(1);
+  }
+  @include media($nb--large) {
+    @include span-columns(4);
+    @include shift(2);
+  }
 }
-// .m-intro__underline {
-//   @include media($phone) {
-//     display: inline-block;
-//   }
-// }
+
 .m-intro__more {
   position: absolute;
-  // bottom: em($ratio--l);
   bottom: em($ratio--m);
   left: 25%;
   right: 25%;
 
+  padding-right: em($ratio--s);
+
   text-align: center;
 
   z-index: $index--m;
+
+  @include media($tablet__up) {
+    bottom: em($ratio--l);
+  }
 
   &:hover {
     .o-mark:before {
@@ -32,69 +38,6 @@
   background-image: url("../images/bg_top1.jpg");
 }
 
-.m-about {
-  position: relative;
-  overflow: hidden;
-
-  color: white;
-  background-color: $c-color1--black;
-}
-.m-about__break {
-  display: block;
-}
-.m-about__text {
-  // @include span-columns(8);
-  // @include shift(2);
-  // margin-bottom: em($ratio--m);
-}
-.m-about__triplet {
-  clear: left;
-}
-.m-about__background {
-  [class^="svg-"],
-  [class*=" svg-"] {
-    position: absolute;
-
-    transition: transform $duration--b $timing--xf;
-    transform: scale(0) rotate(35deg);
-
-    .shapes--are-active & {
-      transform: scale(1) rotate(0);
-    }
-  }
-  .svg-circle {
-    left: 15%;
-    bottom: -7%;
-    fill: $c-color3--light;
-  }
-  .svg-parallel {
-    left: 15%;
-    top: -5%;
-    fill: $c-grey4;
-  }
-  .svg-triangle {
-    left: -2%;
-    top: 35%;
-    fill: $c-color2--light;
-
-    transition-delay: $duration--l;
-  }
-  .svg-pie {
-    right: -1%;
-    top: 20%;
-    fill: $c-color4--light;
-
-    transition-delay: $duration--s;
-  }
-  .svg-rectangle {
-    right: -5%;
-    bottom: 10%;
-    fill: $c-color1--light;
-
-    transition-delay: $duration--l;
-  }
-}
-
 .m-opening__background {
   background-image: url("../images/bg_stopmotion1b.jpg");
 }
@@ -104,72 +47,12 @@
   background-color: white;
 }
 .m-features__text {
-  // @include span-columns(8);
-  // @include shift(2);
+  @include media($nb--large) {
+    @include span-columns(6);
+    @include shift(1);  
+  }
 
   margin-top: 0;
   
   text-align: center;
-}
-
-.m-footer {
-  position: relative;
-  overflow: hidden;
-
-  color: $c-grey7;
-  text-align: center;
-}
-.m-footer__foreground {
-  position: relative;
-  z-index: $index--b;
-}
-.m-footer__submit {
-  display: inline-block;
-  // margin-left: em($ratio--s);
-  @include media($phone) {
-    margin-top: em($ratio--s);
-  }
-
-  color: $c-color2;
-  @include state--hover {
-    color: $c-color1;
-  }
-  &:active {
-    color: $c-color1--black;
-  }
-}
-.m-footer__background {
-  display: none;
-
-  [class^="svg-"],
-  [class*=" svg-"] {
-    position: absolute;
-    fill: none;
-    stroke-width: 3;
-  }
-  .svg-circle {
-    left: 55%;
-    top: -15%;
-    stroke: $c-color3--light;
-  }
-  .svg-parallel {
-    left: 7.5%;
-    bottom: -20%;
-    stroke: $c-grey3;
-  }
-  .svg-triangle {
-    left: -5%;
-    top: 10%;
-    stroke: $c-color2--light;
-  }
-  .svg-pie {
-    right: -5%;
-    top: 15%;
-    stroke: $c-color4--light;
-  }
-  .svg-rectangle {
-    right: -10%;
-    bottom: 10%;
-    stroke: $c-color1--light;
-  }
 }

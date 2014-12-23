@@ -4,6 +4,7 @@ $(document).on("ready", function() {
     $body = $("body");
 
   if (isDesktop()) {
+    $body.addClass("body--is-desktop");
 
     var
       waypointDown = $("[data-waypoint]").waypoint({
@@ -23,6 +24,8 @@ $(document).on("ready", function() {
         }
       })
 
+  } else {
+    $body.addClass("body--not-desktop");
   }
 
 });

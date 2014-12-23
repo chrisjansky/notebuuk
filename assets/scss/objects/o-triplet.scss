@@ -1,0 +1,74 @@
+.o-triplet {
+  @include reset-list;
+  @include clearfix;
+
+  svg {
+    fill: white;
+  }
+}
+
+[class^="o-triplet__item"],
+[class*=" o-triplet__item"] {
+  @include media($tablet__up) {
+    position: relative;
+  }
+  
+  @include media($tablet__up) {
+    @include clearfix;
+  }
+
+  &:last-child p {
+    margin-bottom: 0;
+  }
+  @include media($phone) {
+    & + & {
+      margin-top: em($ratio--m);
+    }
+  }
+}
+
+.o-triplet__item--1 {
+  color: $c-color4--white;
+}
+.o-triplet__item--2 {
+  color: $c-color3--white;
+}
+.o-triplet__item--3 {
+  color: $c-color2--white;
+}
+
+.o-triplet__text { 
+  @include media($tablet--portrait) {
+    @include span-columns(4);
+    @include shift(1);
+  }
+  @include media($nb--large) {
+    @include span-columns(6);
+    @include shift(1);
+  }
+}
+
+.o-triplet__icon {
+  @include media($phone) {
+    text-align: center;
+  }
+  @include media($tablet__up) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    @include pseudo-center--parent;
+
+    .o-triplet__item--1 &,
+    .o-triplet__item--3 & {
+      left: 0;
+    }
+    .o-triplet__item--2 & {
+      right: 3%; // Optical alignment, magic!
+    }
+  }
+
+  svg {
+    vertical-align: middle;
+  }
+}

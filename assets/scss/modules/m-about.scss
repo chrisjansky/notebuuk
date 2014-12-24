@@ -4,6 +4,8 @@
 
   color: white;
   background-color: $c-color1--black;
+
+  z-index: $index--s;
 }
 .m-about__foreground {
   position: relative;
@@ -58,7 +60,7 @@
 @include media($tablet) {
   .m-about__shape--circle {
     left: 20%;
-    bottom: -7.5%;
+    bottom: -10%;
   }
   .m-about__shape--parallel {
     left: 5%;
@@ -69,8 +71,8 @@
     top: 32.5%;
   }
   .m-about__shape--pie {
-    right: -10%;
-    top: 5%;
+    right: -12.5%;
+    top: 3.5%;
   }
   .m-about__shape--rectangle {
     right: -22.5%;

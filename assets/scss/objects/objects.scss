@@ -83,7 +83,7 @@
 .o-figure__media {
   position: relative;
 
-  &:after {
+  .csstransforms &:after {
     content: "";
 
     position: absolute;
@@ -96,6 +96,7 @@
     background-color: white;
 
     transition: transform $duration--l $timing--f;
+
   }
   .swiper-slide-active &:after {
     transform: scale(0);

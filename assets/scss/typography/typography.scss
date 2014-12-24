@@ -33,8 +33,7 @@
     bottom: 10%;
     left: 5%;
     right: 5%;
-
-    height: $line--b;
-    background-color: currentColor;
+    
+    border-bottom: $line--b solid;
   }
 }

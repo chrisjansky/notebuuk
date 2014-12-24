@@ -18,25 +18,26 @@
   @include media($tablet__up) {
     @include padding(null em($ratio--b));
   }
-  
+
   @include media($tablet--portrait) {
     width: em($width--b);
   }
-
   @include media($nb--large) {
     width: em($width--m);
   }
-
-  &:nth-child(1n) {
-    color: $c-color1;
+  @include media($desktop--wide) {
+    width: em($width--l);
   }
-  &:nth-child(2n) {
+
+  color: $c-color1;
+
+  &:nth-of-type(2n) {
     color: $c-color2;
   }
-  &:nth-child(3n) {
+  &:nth-of-type(3n) {
     color: $c-color3;
   }
-  &:nth-child(4n) {
+  &:nth-of-type(4n) {
     color: $c-color4;
   }
 }
@@ -73,6 +74,9 @@
   @include media($nb--large) {
     height: em($width--m);
   }
+  @include media($desktop--wide) {
+    height: em($width--l);
+  }
 
   text-decoration: none; 
 
@@ -82,7 +86,7 @@
   @include pseudo-center--parent;
 
   @include state--link {
-    color: $c-grey3; 
+    @include rgba(color, $c-grey6, .5)
   }
   @include state--hover {
     color: $c-color1;
@@ -94,7 +98,10 @@
     left: 10%;
   }
   @include media($nb--large) {
-    left: 15%;
+    left: 12.5%;
+  }
+  @include media($desktop--wide) {
+    left: 17.5%;
   }
 }
 .o-carousel__arrow--next {
@@ -103,13 +110,16 @@
     right: 10%;
   }
   @include media($nb--large) {
-    right: 15%;
+    right: 12.5%;
+  }
+  @include media($desktop--wide) {
+    right: 17.5%;
   }
 }
 
 .arrow--is-disabled {
   cursor: default;
   @include state--all {
-    color: $c-grey3;
+    @include rgba(color, $c-grey6, .25)
   }
 }

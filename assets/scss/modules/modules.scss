@@ -36,6 +36,8 @@
 }
 .m-intro__background {
   background-image: url("../images/bg_top1.jpg");
+
+  z-index: $index--xs;
 }
 
 .m-opening__background {
@@ -47,11 +49,6 @@
   background-color: white;
 }
 .m-features__text {
-  @include media($nb--large) {
-    @include span-columns(6);
-    @include shift(1);  
-  }
-
   margin-top: 0;
   
   text-align: center;

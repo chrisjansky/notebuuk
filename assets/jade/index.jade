@@ -2,7 +2,7 @@ extends templates/_basic
 
 block template-body
 
-  header.m-intro.o-hero
+  header.m-intro.o-hero#parallax-1
     .o-hero__overlay
       .o-hero__content
         .m-intro__top
@@ -13,7 +13,7 @@ block template-body
           h1.t-h1.m-intro__title from paper 
             span.t-h1__underline.m-intro__underline with love
         p.m-intro__text.t-lead Say hello to a&nbsp;new brand of premium notebuuks, entirely handmade, entirely awesome.
-    .m-intro__background.o-parallax(data-parallax)
+    #parallax-1--child.m-intro__background.o-parallax
 
     a(href="#about", data-scrollto).m-intro__more
       mark.o-mark.o-iconed--left.ss-down
@@ -62,7 +62,7 @@ block template-body
         use(xlink:href="#shape_triangle")
 
   aside.o-peek.m-opening
-    .m-opening__background.o-parallax(data-parallax)
+    .m-opening__background.o-parallax
 
   section.m-features
     .l-wrap.l-wrap--top-big

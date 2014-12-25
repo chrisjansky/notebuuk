@@ -11,18 +11,19 @@
   font-family: $font__serif;
   font-weight: $font__serif--light;
 
-  font-size: em($unit--xl);
+  font-size: em($ratio--l);
   line-height: $spacing--xs;
 
   @include margin(em($ratio--xxs) null);
   @include media($tablet__up) {
     font-size: em($unit--xxl);
+
+    @include margin(em($ratio--xs) null);
   }
-  // @include margin(em($ratio--s) null);
 }
 .t-h1__underline {
   border-bottom-style: solid;
-  border-bottom-width: $line--m;
+  border-bottom-width: $line--b;
   vertical-align: 25%; // Magic number
 
   @include media($tablet__up) {

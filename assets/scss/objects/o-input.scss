@@ -19,6 +19,7 @@
   }
   // iOS reset.
   -webkit-appearance: none;
+  border-radius: 0;
   &:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 $ratio--m $c-grey2 inset;
     border-bottom-color: $c-grey3;

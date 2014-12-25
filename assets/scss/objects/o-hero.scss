@@ -1,7 +1,8 @@
 .o-hero {
   position: relative;
+  overflow: hidden;
 
-  height: 100vh;
+  height: 100%;
 
   @include media($tablet__up) {
     min-height: em(480);
@@ -20,15 +21,17 @@
 }
 
 .o-hero__content {
+  max-width: em($width--xl);
+  
   @include padding(null em($ratio--m));
-
-  // @include media($phone--landscape__up) {
-  //   @include padding(null em($ratio--m));
-  // }
 
   margin-left: em(-20); // Offseting white-space from pseudo-centering
 
   @include collapse-children;
   @include pseudo-center--child;
   white-space: normal;
+
+  @include media($phone--portrait) {
+    padding-bottom: em($ratio--m);
+  }
 }

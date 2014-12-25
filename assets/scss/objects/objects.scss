@@ -20,9 +20,13 @@
 
 .o-logo {
   display: inline-block;
-  width: em(150);
-  height: em(25);
+  width: em(113);
+  height: em(19);
 
+  @include media($tablet__up) {
+    width: em(150);
+    height: em(25);
+  }
 
   overflow: hidden;
   svg {
@@ -72,7 +76,7 @@
 
 .o-peek {
   position: relative;
-  height: 62vh; // Golden ratio, bitch!
+  height: 62%; // Golden ratio, bitch!
 }
 
 .o-figure {
@@ -101,6 +105,8 @@
   }
 }
 .o-figure__image {
+  width: 100%;
+  
   border-radius: 50%;
 }
 

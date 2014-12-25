@@ -2,6 +2,7 @@
   display: inline-block;
 }
 .m-intro__text {
+  margin-top: 0;
   @include media($tablet--portrait) {
     @include span-columns(4);
     @include shift(1);

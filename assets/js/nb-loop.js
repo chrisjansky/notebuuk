@@ -7,7 +7,7 @@ document.onreadystatechange = function() {
     var
       scrollPos = -1,
       nbParallax = new chjParallax(),
-      nbChangeBg = new chjChangeBg();
+      nbChangeBg = new chjStopmotion();
 
     (function nbLoop() {
       if (scrollPos == window.pageYOffset) {

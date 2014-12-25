@@ -35,14 +35,23 @@
   }
 }
 .m-intro__background {
-  background-image: url("../images/bg_top1.jpg");
+  background: url("../images/bg_top1.jpg") no-repeat center / cover;
 
   z-index: $index--xs;
 }
 
-.m-opening__background {
-  background-image: url("../images/bg_stopmotion1b.jpg");
+[class^="m-opening__background"],
+[class*=" m-opening__background"] {
+  @include stretch-overlay;
+  background: no-repeat center / cover;
+
+  transform: translateZ(0);
 }
+.m-opening__background--1 {background-image: url("../images/bg_stopmotion1.jpg"); }
+.m-opening__background--2 {background-image: url("../images/bg_stopmotion2.jpg"); }
+.m-opening__background--3 {background-image: url("../images/bg_stopmotion3.jpg"); }
+.m-opening__background--4 {background-image: url("../images/bg_stopmotion4.jpg"); }
+.m-opening__background--5 {background-image: url("../images/bg_stopmotion5.jpg"); }
 
 .m-features {
   color: $c-grey5;

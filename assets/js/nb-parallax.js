@@ -40,6 +40,9 @@ function chjParallax(config) {
     for (i = 0; i < elAmount; i++) {
       elMatrix[i] = elMatrix[i] || { el: elements[i] }
 
+      // Reinit
+      elMatrix[i].el.style.display = "block"
+
       // Start at 0 if it's the first in array
       elMatrix[i].start = elMatrix[i-1] ? $(elMatrix[i].el).parent().offset().top - trigger : 0
       elMatrix[i].stop = elMatrix[i].start + elMatrix[i].el.parentNode.offsetHeight + trigger
@@ -60,11 +63,11 @@ function chjParallax(config) {
     for (i = 0; i < elAmount; i++) {
       // Check if visible
       if (position >= elMatrix[i].start - viewHeight && position <= elMatrix[i].stop) {
-        elMatrix[i].el.style.opacity = "1"
+        elMatrix[i].el.style.display = "block"
 
         setTop(elMatrix[i], (elMatrix[i].start - position) * config.scrollSpeed)
       } else {
-        elMatrix[i].el.style.opacity = "0"
+        elMatrix[i].el.style.display = "none"
       }
     }
   }

@@ -41,9 +41,9 @@
     "assets/kss/assets/prism.css"
   ],
   "ftp": {
-    "host": "chrisjansky.cz",
-    "user": "w85799",
+    "host": "notebuuk.cz",
+    "user": "w88910",
     "pass": "",
-    "path": "www/subdom/work/notebuuk"
+    "path": "www"
   }
 }

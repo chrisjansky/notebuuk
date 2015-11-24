@@ -1,0 +1,62 @@
+// Bourbon
+@import "bourbon";
+
+// Mixins
+@import "chj-framework/assets/scss/mixins/_mixins";
+@import "chj-framework/assets/scss/mixins/_center";
+@import "chj-framework/assets/scss/mixins/_color";
+@import "chj-framework/assets/scss/mixins/_reset";
+@import "chj-framework/assets/scss/mixins/_state";
+@import "chj-framework/assets/scss/mixins/_wrap";
+
+// Config
+@import "config/c-colors";
+@import "config/c-units";
+@import "config/c-fonts";
+@import "config/c-transitions";
+@import "config/c-bourbon";
+
+// Neat
+@import "neat";
+
+body {
+  background-color: $c-color1--black;
+  color: white;
+
+  font-family: "Helvetica", sans-serif;
+  line-height: $default__leading;
+}
+
+.l-outer {
+  width: 100%;
+}
+
+.l-inner {
+  width: 600px;
+}
+
+.t-head {
+  text-align: center;
+}
+
+.t-text--one {
+  color: $c-color2;
+}
+.t-text--two {
+  color: $c-color4;
+}
+.t-text--three {
+  color: $c-color1;
+}
+
+.t-link--one {
+  color: inherit;
+
+  text-decoration: none;
+
+  border-bottom: $line--s solid;
+
+  &:hover {
+    color: $c-color3;
+  }
+}

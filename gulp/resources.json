@@ -1,0 +1,55 @@
+{
+  "toMove": [
+    "!app/assets/**/*.html",
+    "app/**/*.html",
+    "app/fonts/*"
+  ],
+  "injectDev": {
+    "site": [
+      "bower_components/normalize-css/normalize.css",
+      "bower_components/idangerous-swiper/dist/idangerous.swiper.css",
+      "app/assets/css/style.css",
+
+      "bower_components/jquery-easing-original/jquery.easing.1.3.js",
+      "bower_components/idangerous-swiper/dist/idangerous.swiper.js",
+      "bower_components/jquery-waypoints/lib/jquery.waypoints.js",
+
+      "app/assets/js/vendor/svgAddClass.js",
+      "app/assets/js/vendor/svgRemoveClass.js",
+
+      "app/assets/js/nb-base.js",
+
+      "bower_components/chj-framework/app/assets/js/chj-external.js",
+      "bower_components/chj-framework/app/assets/js/chj-detect.js",
+
+      "app/assets/js/nb-parallax.js",
+      "app/assets/js/nb-stopmotion.js",
+      "app/assets/js/nb-waypoints.js",
+      "app/assets/js/nb-scrollto.js",
+      "app/assets/js/nb-carousel.js",
+      "app/assets/js/nb-loop.js"
+    ],
+    "vendor": [
+      "bower_components/modernizr/modernizr.js"
+    ],
+    "guide": [
+      "app/assets/css/guide.css",
+      "bower_components/chj-framework/app/guide/public/prism.css",
+      "bower_components/chj-framework/app/guide/public/prism.js",
+      "bower_components/chj-framework/app/guide/public/guide.js",
+      "bower_components/chj-framework/app/assets/js/chj-toggle.js"
+    ]
+  },
+  "injectDist": {
+    "site": [
+      "dist/assets/css/style-min.css",
+      "dist/assets/js/site-min.js"
+    ],
+    "vendor": [
+    ],
+    "guide": [
+      "dist/assets/css/guide-min.css",
+      "dist/assets/js/guide-min.js"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+extends _shared
+
+append template-head
+  <!-- site:css -->
+  <!-- endinject -->
+
+  <!-- vendor:js -->
+  <!-- endinject -->
+
+block template-body
+  include /../bower_components/chj-framework/app/assets/jade/mixins/_dummy
+  include ../../svg/complete.svg
+
+block template-content
+  p Basic template.
+
+append template-foot
+  include ../partials/_analytics.html
+  
+  <!-- site:js -->
+  <!-- endinject -->

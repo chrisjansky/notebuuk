@@ -9,7 +9,6 @@
 #mce-success-response {
   margin-top: em($ratio--m);
 
-  font-family: $font__sans;
   font-size: em($unit--s);
 
   @include media($tablet--portrait) {

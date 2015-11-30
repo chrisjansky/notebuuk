@@ -1,3 +1,7 @@
+$device__phablet:    440;
+$device__tablet:     720;
+$device__desktop:    980;
+
 // Media queries.
 $phone: new-breakpoint(max-width em(560));
 $phone--portrait: new-breakpoint(max-width em(400));

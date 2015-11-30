@@ -1,0 +1,55 @@
+{
+  "colors": [
+    {
+      "name": "primary",
+      "shades": [
+        {
+         "name": "bright",
+         "value": "$c-color1--white"
+        },
+        {
+         "name": "light",
+         "value": "$c-color1--light"
+        },
+        {
+         "name": "base",
+         "value": "$c-color1"
+        }
+      ]
+    }
+  ],
+  "greys": [
+    {
+      "name": "bright",
+      "value": "$c-grey1"
+    },
+    {
+      "name": "lightest",
+      "value": "$c-grey2"
+    },
+    {
+      "name": "lighter",
+      "value": "$c-grey3"
+    },
+    {
+      "name": "light",
+      "value": "$c-grey4"
+    },
+    {
+      "name": "medium",
+      "value": "$c-grey5"
+    },
+    {
+      "name": "dark",
+      "value": "$c-grey6"
+    },
+    {
+      "name": "darker",
+      "value": "$c-grey7"
+    },
+    {
+      "name": "darkest",
+      "value": "$c-grey8"
+    }
+  ]
+}

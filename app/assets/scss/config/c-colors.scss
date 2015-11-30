@@ -22,7 +22,7 @@ $c-color3--white: hsb($c-hue3, 40, 100);
 $c-color3--light: hsb($c-hue3, 65, 90);
 $c-color3: hsb($c-hue3, 80, 90);
 $c-color3--dark: hsb($c-hue3, 80, 85);
-$c-color3--black: hsb($c-hue3, 80, 80);
+$c-color3--black: hsb($c-hue3 - 10, 70, 90);
 
 $c-color4--white: hsb($c-hue4, 40, 100);
 $c-color4--light: hsb($c-hue4, 50, 100);
@@ -31,14 +31,14 @@ $c-color4--dark: hsb($c-hue4, 50, 85);
 $c-color4--black: hsb($c-hue4, 70, 80);
 
 // Neutral colors.
-$c-grey1: hsb(045, 04, 95);
-$c-grey2: hsb(045, 05, 90);
-$c-grey3: hsb(045, 06, 80);
-$c-grey4: hsb(045, 07, 65);
-$c-grey5: hsb(215, 08, 50);
-$c-grey6: hsb(215, 09, 35);
-$c-grey7: hsb(215, 10, 25);
-$c-grey8: hsb(215, 11, 10);
+$c-grey1: hsb(045, 02, 95);
+$c-grey2: hsb(045, 03, 90);
+$c-grey3: hsb(045, 04, 80);
+$c-grey4: hsb(045, 05, 65);
+$c-grey5: hsb(215, 06, 50);
+$c-grey6: hsb(215, 07, 35);
+$c-grey7: hsb(215, 08, 25);
+$c-grey8: hsb(215, 09, 10);
 
 // Interactive.
 $c-link--light: $c-color3--light;
@@ -56,3 +56,8 @@ $c-select__background: $c-color2--light;
 $c-select__text: $c-color2--black;
 
 $grey-4: $c-grey4;
+$grey--200: $c-grey2;
+$grey--700: $c-grey7;
+$grey--900: $c-grey8;
+
+$c-select__bg: $c-select__background;

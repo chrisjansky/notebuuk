@@ -1,50 +1,58 @@
 // Families.
 $font__sans: "apercu", sans-serif;
-$font__serif: "museo-slab", serif;
 $font__mono: "apercu-mono", monospace;
 
 // Weights.
+$font__sans--light: 400;
 $font__sans--regular: 500;
 $font__sans--medium: 600;
-
-$font__serif--light: 300;
-$font__serif--regular: 500;
+$font__sans--bold: 700;
 
 $font__mono--regular: 500;
 
 // Defaults.
 $default__size: $unit--b;
-$default__family: $font__mono;
-$default__weight: $font__mono--regular;
+$default__family: $font__sans;
+$default__weight: $font__sans--regular;
 $default__leading: $spacing--b;
 
 @font-face {
   font-family: "apercu";
-  src: url("../fonts/Apercu.eot");
-  src: url("../fonts/Apercu.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/Apercu.woff") format("woff"),
-       url("../fonts/Apercu.ttf") format("truetype"),
-       url("../fonts/Apercu.svg#apercu") format("svg");
+  src: url("../fonts/ApercuPro-Light.eot");
+  src: url("../fonts/ApercuPro-Light.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/ApercuPro-Light.woff") format("woff");
+  font-weight: $font__sans--light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "apercu";
+  src: url("../fonts/ApercuPro-Regular.eot");
+  src: url("../fonts/ApercuPro-Regular.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/ApercuPro-Regular.woff") format("woff");
   font-weight: $font__sans--regular;
   font-style: normal;
 }
 @font-face {
   font-family: "apercu";
-  src: url("../fonts/Apercu-Medium.eot");
-  src: url("../fonts/Apercu-Medium.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/Apercu-Medium.woff") format("woff"),
-       url("../fonts/Apercu-Medium.ttf") format("truetype"),
-       url("../fonts/Apercu-Medium.svg#apercu") format("svg");
+  src: url("../fonts/ApercuPro-Medium.eot");
+  src: url("../fonts/ApercuPro-Medium.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/ApercuPro-Medium.woff") format("woff");
   font-weight: $font__sans--medium;
   font-style: normal;
 }
 @font-face {
+  font-family: "apercu";
+  src: url("../fonts/ApercuPro-Bold.eot");
+  src: url("../fonts/ApercuPro-Bold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/ApercuPro-Bold.woff") format("woff");
+  font-weight: $font__sans--bold;
+  font-style: normal;
+}
+@font-face {
   font-family: "apercu-mono";
-  src: url("../fonts/apercu-mono-webfont.eot");
-  src: url("../fonts/apercu-mono-webfont.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/apercu-mono-webfont.woff") format("woff"),
-       url("../fonts/apercu-mono-webfont.ttf") format("truetype"),
-       url("../fonts/apercu-mono-webfont.svg#apercu-mono") format("svg");
+  src: url("../fonts/ApercuPro-Mono.eot");
+  src: url("../fonts/ApercuPro-Mono.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/ApercuPro-Mono.woff") format("woff");
   font-weight: $font__mono--regular;
   font-style: normal;
 }

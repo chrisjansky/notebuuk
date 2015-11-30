@@ -1,6 +1,4 @@
 .t-lead {
-  font-family: $font__sans;
-
   font-size: em($unit--m);
   @include media($tablet__up) {
     font-size: em($unit--l);

@@ -1,61 +1,43 @@
-// A basic button.
-//
-// .o-button--solid - Solid background.
-// .o-button--outline - Outline variant.
-// .o-button--block - Full-width.
-// .o-button--selected - Selected.
-//
-// Markup:
-// <a href="#" class="o-button {$modifiers}">Button</a>
-// <a href="#" class="o-button {$modifiers} pseudo-class-hover">On Hover</a>
-//
-// Styleguide 3.1.
-[class^="o-button--"],
-[class*=" o-button--"] {
+/*
+Button
+
+.o-button--solid - Solid background.
+.o-button--outline - Outline variant.
+.o-button--block.o-button--outline - Full-width, e.g. outline.
+.o-button--selected - Selected.
+
+Markup:
+<a href="#" class="{{modifier_class}}">Button</a>
+
+Styleguide 3.1.
+*/
+
+.o-button {
   display: inline-block;
 
-  padding-left: em($ratio--b);
-  padding-right: em($ratio--b);
-  line-height: em($height--b);
-  
-  border-radius: $radius--b;
-}
+  font-size: em($unit--l);
 
-.o-button--solid {
+  & + & {
+    margin-left: em($ratio--m);
+  }
+
   @include state--link {
-    color: $c-color3--black;
-    background-color: $c-link;
+    color: $c-color1;
   }
   @include state--active {
-    color: white;
-    background-color: $c-hover;
+    color: $c-color1--white;
   }
 }
+.o-button__icon {
+  @include size(em(18));
 
-// Outline border.
-.o-button--outline {
-  border: $line--b solid;
-  line-height: em($height--b - $line--b * 2);
-  @include state--link {
-    color: $c-link;
-  }
-  @include state--active {
-    color: $c-hover;
-  }
+  vertical-align: middle;
+
+  fill: currentColor;
+
+  margin-right: em($ratio--xs);
 }
 
-// Block, centered text.
-.o-button--block {
-  display: block;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-}
-
-// Selected.
-.o-button--selected {
-  @include state--all {
-    background-color: $c-grey1;
-    color: $c-grey4;
-  }
+.o-button__text {
+  border-bottom: $line--b solid;
 }

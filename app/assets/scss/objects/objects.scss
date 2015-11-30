@@ -155,10 +155,6 @@
 
   padding: em($ratio--xs);
 
-  // width: 30px;
-  // height: 30px;
-  // overflow: hidden;
-
   svg {
     vertical-align: middle;
     fill: currentColor;
@@ -178,6 +174,7 @@
 .o-credit__authors {
   color: $c-grey4;
 }
-.o-credit__tiny {
-  color: $c-grey3;
+
+.o-product__name {
+  font-family: $font__mono;
 }

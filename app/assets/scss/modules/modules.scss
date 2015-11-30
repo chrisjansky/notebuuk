@@ -36,14 +36,14 @@
   }
 }
 .m-intro__background {
-  background: url("../images/bg_top1.jpg") no-repeat center / cover;
+  background: url("../images/bg_top3.jpg") no-repeat center / cover;
 
   z-index: $index--xs;
 }
 
 [class^="m-opening__background"],
 [class*=" m-opening__background"] {
-  @include stretch-overlay;
+  @include position(absolute, 0 0 0 0);
   background: no-repeat center / cover;
 
   transform: translateZ(0);
@@ -54,12 +54,90 @@
 .m-opening__background--4 {background-image: url("../images/bg_stopmotion4.jpg"); }
 .m-opening__background--5 {background-image: url("../images/bg_stopmotion5.jpg"); }
 
-.m-features {
+.m-portfolio {
   color: $c-grey5;
   background-color: white;
 }
-.m-features__text {
+.m-portfolio__intro {
   margin-top: 0;
   
   text-align: center;
+}
+.m-portfolio__text {
+  font-size: em($unit--m);
+}
+
+.m-portfolio__list {
+  margin-top: em($ratio--l);
+}
+[class^="m-portfolio__item--"],
+[class*=" m-portfolio__item--"] {
+  @include clearfix;
+}
+.m-portfolio__item--ideal {
+  margin-top: em(62);
+}
+.m-portfolio__text {
+  font-size: em($unit--m);
+
+  @include media($tablet__up) {
+    font-size: em(26);
+  }
+}
+.m-portfolio__strong {
+  font-weight: $font__sans--regular;
+
+  color: $c-grey3;
+}
+.m-portfolio__underline {
+  border-bottom: $line--b solid;
+
+  vertical-align: 15%;
+
+  @include margin(null em(2));
+}
+.m-portfolio__content--universal {
+  overflow: auto;
+
+  color: $c-color4--light;
+}
+.m-portfolio__content--ideal {
+  @include shift(4 of $columns__desktop);
+
+  margin-top: em($ratio--b);
+
+  color: $c-color2;
+}
+.m-portfolio__content--original {
+  overflow: auto;
+
+  padding-top: em(60);
+
+  color: $c-color3--black;
+}
+.m-portfolio__image--universal {
+  width: 60%;
+  float: right;
+  transform: rotate(5deg) translateX(5%);
+}
+.m-portfolio__image--ideal {
+  width: 80%;
+  margin-left: 10%;
+  transform: rotate(-5deg);
+}
+.m-portfolio__image--original {
+  width: 60%;
+  float: right;
+  transform: rotate(-10deg) translateX(5%);
+}
+
+.m-portfolio__footer {
+  margin-top: em($ratio--l);
+
+  color: $c-color1;
+}
+.m-portfolio__actions {
+  text-align: center;
+
+  margin-top: em($ratio--m);
 }

@@ -30,6 +30,13 @@
   }
 }
 
+.m-footer__title {
+  color: $c-color1--dark;
+}
+.m-footer__underline {
+  color: $c-color1--white;
+}
+
 .m-footer__text {
   @include media($tablet--portrait) {
     @include span-columns(4);

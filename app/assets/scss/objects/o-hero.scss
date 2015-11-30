@@ -10,7 +10,7 @@
 }
 
 .o-hero__overlay {
-  @include stretch-overlay;
+  @include position(absolute, 0 0 0 0);
   @include pseudo-center--parent;
 
   text-align: center;

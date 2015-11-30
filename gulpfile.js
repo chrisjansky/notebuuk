@@ -10,7 +10,7 @@ gulp.task("default", ["server", "watch"]);
 
 /* Advanced */
 require("./bower_components/chj-framework/gulp/tasks/guide.js");
-require("./bower_components/chj-framework/gulp/tasks/svg.js");
+require("./gulp/tasks/svg.js");
 
 /* Production */
 require("./bower_components/chj-framework/gulp/tasks/build.js");

@@ -46,6 +46,7 @@
       "dist/assets/js/site-min.js"
     ],
     "vendor": [
+      "dist/assets/js/vendor-min.js"
     ],
     "guide": [
       "dist/assets/css/guide-min.css",

@@ -9,44 +9,43 @@ block template-content
             svg.svg--stretch
               use(xlink:href="#logo_small")
             span.o-logo__title notebuuk
-          h1.t-h1.m-intro__title from paper 
-            span.t-h1__underline.m-intro__underline with love
-        p.m-intro__text.t-lead Say hello to a&nbsp;new brand of premium notebuuks, entirely handmade, entirely awesome.
+          h1.t-h1.m-intro__title papír je 
+            span.t-h1__underline.m-intro__underline radost
+        p.m-intro__text.t-lead nová česká značka výjimečných, ručně vyráběných sešitů a&nbsp;deníků
     .m-intro__background.o-parallax(data-parallax)
 
     a(href="#about", data-scrollto).m-intro__more
       mark.o-mark.o-iconed--left.ss-down
         span.o-mark__underline
-          span.o-mark__tracked Mor
+          span.o-mark__tracked Víc
           | e
 
   main#about.m-about
-    .m-about__foreground.l-wrap.l-wrap--huge
-      h2.t-h2.m-about__title meet your 
-        span.t-h2__underline new favourite
-        |  
-        span.m-about__break notebuuk
+    .m-about__foreground.l-contain.l-wrap.l-wrap--huge
+      h2.t-h2.m-about__title věříme, že lze deníky dělat 
+        span.m-about__break
+          span.t-h2__underline jinak a&nbsp;lépe
 
-      p.m-about__text.t-lead notebuuk &mdash; a&nbsp;continuation of an award-winning 
-        a.i-link--underline(href="http://graduationprojects.eu/en/2013/Christian-Jansky") Graduation Project
-        |  &mdash; was born out of passion for honest craft, quality materials and unique design.
+      p.m-about__text.t-lead notebuuk &mdash; projekt navazující na oceněnou 
+        a.i-link--underline(href="http://graduationprojects.eu/en/2013/Christian-Jansky") diplomovou práci
+        |  &mdash; vznikl z&nbsp;vášně k&nbsp;papíru, poctivému řemeslu a&nbsp;kvalitním materiálům.
 
       ul.m-about__triplet.o-triplet
         li.o-triplet__item--1
           div.o-triplet__icon
             svg.svg-about--1
               use(xlink:href="#icon_about1")
-          p.o-triplet__text Each notebuuk is completely handmade by Christian&nbsp;&amp; Tereza, two Design Master&rsquo;s students from Czech Republic. From folding of the papers to final packaging, each notebuuk is unmistakeably original.
+          p.o-triplet__text Každý notebuuk je navržen a&nbsp;ručně zhotoven Terezou a&nbsp;Christianem, dvěma studenty designu ve Zlíně. Dostává se mu tak neobyčejné péče &mdash; od počátečního skládání a&nbsp;řezání papíru, přes ruční vazbu a&nbsp;autorský sítotisk, až po podpis na zadní straně a&nbsp;zabalení.
         li.o-triplet__item--2
           div.o-triplet__icon
             svg.svg-about--2
               use(xlink:href="#icon_about2")
-          p.o-triplet__text The choice of materials is what sets notebuuk apart. The juxtaposition of wood veneer inlay and book cloth &mdash; a&nbsp;subtle homage to the heydays of bookmaking &mdash; showcases what can craft and modern approach achieve.
+          p.o-triplet__text Unikátní výběr a&nbsp;kombinace materiálů dělá notebuuk notebuukem. Souhra sytě probarveného knihařského plátna a&nbsp;dřevěné dýhy v sobě snoubí poctivou knihařskou tradici s&nbsp;moderním přístupem.
         li.o-triplet__item--3
           div.o-triplet__icon
             svg.svg-about--3
               use(xlink:href="#icon_about3")
-          p.o-triplet__text Doing away with the flimsy, over-bleached papers, notebuuks are proud to use eco-certified, recycled paper stock of multiple shades for all the possible needs in the world.
+          p.o-triplet__text Papír je srdcem každého sešitu &mdash; haptický zážitek a&nbsp;estetický dojem z&nbsp;notebuuků dotváří použití vysoce kvalitního, recyklovaného papíru různých stupňů bělosti, který se báječně hodí pro psaní i&nbsp;kreslení. 
 
     #js-shape-group.m-about__background
       svg.m-about__shape--circle.svg-shape--circle.js-shape
@@ -68,25 +67,67 @@ block template-content
       .m-opening__background--4
       .m-opening__background--5
 
-  section.m-features
-    .l-wrap.l-wrap--top-big
-      h2.t-h2.t-h2--primary 7 reasons to 
-        span.t-h2__underline fall in love
-      p.m-features__text.t-lead Each notebuuk is destined to be your favourite companion thanks to its pocket-friendly dimensions of 114&thinsp;&times;&thinsp;184&#8239;mm. On top of that, here are seven more explanations why you&rsquo;ll love it!
+  section.m-portfolio
+    .l-contain.l-wrap.l-wrap--top-big
+        h2.t-h2.t-h2--primary papír 
+          span.t-h2__underline všech tvarů
+          |  a&nbsp;barev
+        p.m-portfolio__intro.t-lead V našem studiu se papíru dostává všemožných forem &mdash; od kompaktních deníků až po praktické skicáky. Liší se rozměrem, použitím dřevěné dýhy či typem vazby&hellip; ta je však u&nbsp;každého kusu ručně šitá, s&nbsp;lehkostí otevíratelná a&nbsp;přitom stále neobyčejně pevná.
 
-    include partials/_carousel
+    .m-portfolio__list
+      .m-portfolio__item--universal
+        img.m-portfolio__image--universal(src="assets/images/product_universal1.jpg", alt="uuniversal notebuuk")
+        .m-portfolio__content--universal.l-wrap
+          p.m-portfolio__text
+            span.o-product__name u
+              span.m-portfolio__underline uni
+              | versal
+            |  je všestranný sešit mimořádný svou hravou obálkou, která umně kombinuje autorský sítotisk se subtilním slepotiskem. Prohlížet si ho je zábava na každý den!
+          strong.m-portfolio__strong rozměr 142&thinsp;&times;&thinsp;200 mm, 64 stran, cena 149 Kč
+      .m-portfolio__item--ideal
+        img.m-portfolio__image--ideal(src="assets/images/product_ideal1.jpg", alt="iddeal notebuuk")
+        .m-portfolio__content--ideal.l-wrap
+          p.m-portfolio__text Svým praktickým rozměrem mezi A5 a&nbsp;A4 poskytne skicák 
+            span.o-product__name i
+              span.m-portfolio__underline idea
+              | l
+            |  dostatek místa Vašim nápadům, které se budou na recyklovaném papíru opravdu vyjímat.
+          strong.m-portfolio__strong rozměr 174&thinsp;&times;&thinsp;218 mm, 128 stran, cena 399 Kč
+      .m-portfolio__item--original
+        img.m-portfolio__image--original(src="assets/images/product_original1.jpg", alt="ooriginal notebuuk")
+        .m-portfolio__content--original.l-wrap
+          p.m-portfolio__text Deník 
+            span.o-product__name o
+              span.m-portfolio__underline ori
+              | ginal
+            |  okouzlí nejen souhrou materiálů &mdash; na dotek je díky kombinaci bohatě probarveného plátna a&nbsp;dřevěné dýhy příjemným antistresovým cvičením.
+          strong.m-portfolio__strong rozměr 114&thinsp;&times;&thinsp;182 mm, 160 stran, cena 599 Kč
+
+    .m-portfolio__footer.l-wrap.l-wrap--bottom-big.l-contain
+      .m-portfolio__outro
+        p.t-lead notebuuky tvoříme v limitovaných, málosériových kolekcích, ale i&nbsp;na zakázku klientům. Všechny sjednocuje jedinečné zpracování a&nbsp;nebývalá péče, kterou jim při ručním šití vazby, lepení, potisku a&nbsp;zabalení věnujeme.
+        p Pokud Vás zajímá aktuální nabídka nebo Vás lákají notebuuky podle Vašich představ, napiště nám &mdash; rádi je vyrobíme na míru přesně pro Vás či Vaši firmu.
+
+      .m-portfolio__actions
+        include partials/_enkoder-portfolio.html
+        a.o-button(href="http://facebook.com/notebuuk.cz")
+          svg.o-button__icon
+            use(xlink:href="#icon_facebook")
+          span.o-button__text Sledovat na Facebooku
 
   footer.m-footer.o-section--light
-    .m-footer__foreground.l-wrap.l-wrap--big
-      h2.t-h2.t-h2--secondary buuk yours 
-        span.t-h2__underline now
-      p.m-footer__text.t-lead Our first collection sold out in 4 days. Be there when there&rsquo;s a&nbsp;new one.
+    .m-footer__foreground.l-contain.l-wrap.l-wrap--big
+      h2.m-footer__title.t-h2.t-h2--secondary zamilujte se 
+        span.m-footer__underline.t-h2__underline znovu
+        |  do papíru
+      p.m-footer__text.t-lead Již teď usilovně pracujeme na diářích, které představíme v&nbsp;příštím roce. Navíc chystáme možnost objednávky notebuuků on-line.
 
       .o-subscribe
-        p.o-subscribe__text.o-iconed--left.ss-alarmclock Online store coming Q1 2015. Subscribe to get notified!
+        p.o-subscribe__text.o-iconed--left.ss-alarmclock Zanechte nám svůj e-mail a&nbsp;my se &mdash; jednou za čas &mdash; ozveme s&nbsp;radostnými zprávami.
         include partials/_mailchimp.html
 
       .o-social
+        include partials/_enkoder-footer.html
         a.i-link--black(href="http://facebook.com/notebuuk.cz").o-social__link
           svg.svg-social
             use(xlink:href="#icon_facebook")
@@ -97,12 +138,10 @@ block template-content
           span.o-social__title Instagram
 
       .o-credit
-        .o-credit__authors.t-small Project of 
-          a.i-link--dark(href="http://chrisjansky.cz", rel="author") Christian Jánský
-          |  &amp; 
+        .o-credit__authors.t-small
           a.i-link--dark(href="http://terezacizmarova.cz", rel="author") Tereza Čižmárová
-        small.o-credit__tiny.t-tiny Photography by 
-          a.i-link--light(href="http://filipberanek.com") Filip Beránek
+          |  &amp; 
+          a.i-link--dark(href="http://chrisjansky.cz", rel="author") Christian Jánský
 
     .m-footer__background
       svg.m-footer__shape--circle.svg-shape--circle

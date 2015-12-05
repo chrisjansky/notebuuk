@@ -35,14 +35,15 @@ Desktop.ini
 $RECYCLE.BIN/
 
 ## Custom
-/*.html
-
 _ignore
-_build
+_source_files
 
-public
+dist
 
-assets/css
-assets/fonts
-assets/svg
-assets/images/fallbacks
+app/guide
+app/assets/css
+app/assets/fonts
+app/assets/images/fallbacks
+app/assets/svg
+
+app/**/*.html

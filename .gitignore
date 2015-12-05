@@ -41,9 +41,9 @@ _source_files
 dist
 
 app/guide
-app/assets/css
 app/assets/fonts
 app/assets/images/fallbacks
 app/assets/svg
 
+app/assets/css/*.css
 app/**/*.html

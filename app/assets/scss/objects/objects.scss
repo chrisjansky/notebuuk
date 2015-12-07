@@ -15,7 +15,7 @@
 }
 
 .o-section--light {
-  background-color: $c-grey1;
+  background-color: $grey--100;
 }
 
 .o-logo {
@@ -120,7 +120,7 @@
   }
 }
 .o-subscribe__text {
-  color: $c-color1;
+  color: $color1--500;
 
   margin-bottom: em($ratio--m);
 
@@ -161,10 +161,10 @@
   }
 
   @include state--link {
-    color: $c-grey6;
+    color: $grey--600;
   }
   @include state--active {
-    color: $c-color1;
+    color: $color1--500;
   }
 }
 .o-social__title {
@@ -172,7 +172,7 @@
 }
 
 .o-credit__authors {
-  color: $c-grey4;
+  color: $grey--400;
 }
 
 .o-product__name {

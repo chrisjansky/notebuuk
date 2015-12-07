@@ -6,23 +6,23 @@
   background-color: white;
 
   border: none;
-  border-bottom: $line--b solid $c-grey2;
+  border-bottom: $line--b solid $grey--200;
 
   font-size: em($unit--m);
   
   @include state--hover {
-    border-bottom-color: $c-grey4;
+    border-bottom-color: $grey--400;
   }
   @include state--focus {
-    border-bottom-color: $c-color2;
+    border-bottom-color: $color2--500;
     outline: 0;
   }
   // iOS reset.
   -webkit-appearance: none;
   border-radius: 0;
   &:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 $ratio--m $c-grey2 inset;
-    border-bottom-color: $c-grey3;
+    -webkit-box-shadow: 0 0 0 $ratio--m $grey--200 inset;
+    border-bottom-color: $grey--300;
   }
 
   @include media($tablet__up) {

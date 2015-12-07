@@ -4,28 +4,28 @@ a {
 
 .i-link--dark {
   @include state--link {
-    color: $c-grey4;
+    color: $grey--400;
   }
   @include state--active {
-    color: $c-grey6;
+    color: $grey--600;
   }
 }
 
 .i-link--black {
   @include state--link {
-    color: $c-grey6;
+    color: $grey--600;
   }
   @include state--active {
-    color: $c-grey8;
+    color: $grey--800;
   }
 }
 
 .i-link--light {
   @include state--link {
-    color: $c-grey3;
+    color: $grey--300;
   }
   @include state--active {
-    color: $c-grey5;
+    color: $grey--500;
   }
 }
 
@@ -37,11 +37,11 @@ a {
     border-color: rgba(white, .25);
   }
   &:hover {
-    color: $c-color3--white;
-    border-color: $c-color3--white;
+    color: $color3--300;
+    border-color: $color3--300;
   }
   &:active {
-    color: $c-color4--white;
-    border-color: $c-color4--white;
+    color: $color4--300;
+    border-color: $color4--300;
   }
 }

@@ -5,15 +5,15 @@
       "shades": [
         {
          "name": "bright",
-         "value": "$c-color1--white"
+         "value": "$color1--300"
         },
         {
          "name": "light",
-         "value": "$c-color1--light"
+         "value": "$color1--400"
         },
         {
          "name": "base",
-         "value": "$c-color1"
+         "value": "$color1--500"
         }
       ]
     }
@@ -21,35 +21,35 @@
   "greys": [
     {
       "name": "bright",
-      "value": "$c-grey1"
+      "value": "$grey--100"
     },
     {
       "name": "lightest",
-      "value": "$c-grey2"
+      "value": "$grey--200"
     },
     {
       "name": "lighter",
-      "value": "$c-grey3"
+      "value": "$grey--300"
     },
     {
       "name": "light",
-      "value": "$c-grey4"
+      "value": "$grey--400"
     },
     {
       "name": "medium",
-      "value": "$c-grey5"
+      "value": "$grey--500"
     },
     {
       "name": "dark",
-      "value": "$c-grey6"
+      "value": "$grey--600"
     },
     {
       "name": "darker",
-      "value": "$c-grey7"
+      "value": "$grey--700"
     },
     {
       "name": "darkest",
-      "value": "$c-grey8"
+      "value": "$grey--800"
     }
   ]
 }

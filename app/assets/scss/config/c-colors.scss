@@ -1,63 +1,58 @@
-$c-hue1: 205;
-$c-hue2: 165;
-$c-hue3: 55;
-$c-hue4: 15;
+$hue-1: 205;
+$hue-2: 165;
+$hue-3: 55;
+$hue-4: 15;
 
-$c-offset: 10;
+$offset-1: 10;
 
 // Primary colors.
-$c-color1--white: hsb($c-hue1, 80, 95);
-$c-color1--light: hsb($c-hue1, 85, 90);
-$c-color1: hsb($c-hue1, 95, 75);
-$c-color1--dark: hsb($c-hue1, 85, 65);
-$c-color1--black: hsb($c-hue1 + $c-offset, 85, 30);
+$color1--300: hsb($hue-1, 80, 95);
+$color1--400: hsb($hue-1, 85, 90);
+$color1--500: hsb($hue-1, 95, 75);
+$color1--700: hsb($hue-1, 85, 65);
+$color1--900: hsb($hue-1 + $offset-1, 85, 30);
 
-$c-color2--white: hsb($c-hue2, 40, 100);
-$c-color2--light: hsb($c-hue2, 70, 85);
-$c-color2: hsb($c-hue2, 70, 80);
-$c-color2--dark: hsb($c-hue2, 75, 60);
-$c-color2--black: hsb($c-hue2, 65, 35);
+$color2--300: hsb($hue-2, 40, 100);
+$color2--400: hsb($hue-2, 70, 85);
+$color2--500: hsb($hue-2, 70, 80);
+$color2--700: hsb($hue-2, 75, 60);
+$color2--900: hsb($hue-2, 65, 35);
 
-$c-color3--white: hsb($c-hue3, 40, 100);
-$c-color3--light: hsb($c-hue3, 65, 90);
-$c-color3: hsb($c-hue3, 80, 90);
-$c-color3--dark: hsb($c-hue3, 80, 85);
-$c-color3--black: hsb($c-hue3 - 10, 70, 90);
+$color3--300: hsb($hue-3, 40, 100);
+$color3--400: hsb($hue-3, 65, 90);
+$color3--500: hsb($hue-3, 80, 90);
+$color3--700: hsb($hue-3, 80, 85);
+$color3--900: hsb($hue-3 - $offset-1, 70, 90);
 
-$c-color4--white: hsb($c-hue4, 40, 100);
-$c-color4--light: hsb($c-hue4, 50, 100);
-$c-color4: hsb($c-hue4, 55, 95);
-$c-color4--dark: hsb($c-hue4, 50, 85);
-$c-color4--black: hsb($c-hue4, 70, 80);
+$color4--300: hsb($hue-4, 40, 100);
+$color4--400: hsb($hue-4, 50, 100);
+$color4--500: hsb($hue-4, 55, 95);
+$color4--700: hsb($hue-4, 50, 85);
+$color4--900: hsb($hue-4, 70, 80);
 
 // Neutral colors.
-$c-grey1: hsb(045, 02, 95);
-$c-grey2: hsb(045, 03, 90);
-$c-grey3: hsb(045, 04, 80);
-$c-grey4: hsb(045, 05, 65);
-$c-grey5: hsb(215, 06, 50);
-$c-grey6: hsb(215, 07, 35);
-$c-grey7: hsb(215, 08, 25);
-$c-grey8: hsb(215, 09, 10);
+$grey--100: hsb(045, 02, 95);
+$grey--200: hsb(045, 03, 90);
+$grey--300: hsb(045, 04, 80);
+$grey--400: hsb(045, 05, 65);
+$grey--500: hsb(215, 06, 50);
+$grey--600: hsb(215, 07, 35);
+$grey--700: hsb(215, 08, 25);
+$grey--800: hsb(215, 09, 10);
 
 // Interactive.
-$c-link--light: $c-color3--light;
-$c-link: $c-color2;
-$c-link--dark: $c-color3--dark;
+$c-link--light: $color3--400;
+$c-link: $color2--500;
+$c-link--dark: $color3--700;
 
 $c-visited: $c-link;
-$c-hover: $c-color1;
+$c-hover: $color1--500;
 
-$c-active: $c-color3;
-$c-active--light: $c-color3--light;
-$c-active--dark: $c-color3--dark;
+$c-active: $color3--500;
+$c-active--light: $color3--400;
+$c-active--dark: $color3--700;
 
-$c-select__background: $c-color2--light;
-$c-select__text: $c-color2--black;
-
-$grey-4: $c-grey4;
-$grey--200: $c-grey2;
-$grey--700: $c-grey7;
-$grey--900: $c-grey8;
+$c-select__background: $color2--400;
+$c-select__text: $color2--900;
 
 $c-select__bg: $c-select__background;

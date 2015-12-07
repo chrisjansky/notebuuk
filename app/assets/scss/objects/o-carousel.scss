@@ -29,16 +29,16 @@
     width: em($width--l);
   }
 
-  color: $c-color1;
+  color: $color1--500;
 
   &:nth-of-type(2n) {
-    color: $c-color2;
+    color: $color2--500;
   }
   &:nth-of-type(3n) {
-    color: $c-color3;
+    color: $color3--500;
   }
   &:nth-of-type(4n) {
-    color: $c-color4;
+    color: $color4--500;
   }
 }
 .o-carousel__text {
@@ -86,10 +86,10 @@
   @include pseudo-center--parent;
 
   @include state--link {
-    @include rgba(color, $c-grey6, .5)
+    @include rgba(color, $grey--600, .5)
   }
   @include state--hover {
-    color: $c-color1;
+    color: $color1--500;
   }
 }
 .o-carousel__arrow--prev {
@@ -120,6 +120,6 @@
 .arrow--is-disabled {
   cursor: default;
   @include state--all {
-    @include rgba(color, $c-grey6, .25)
+    @include rgba(color, $grey--600, .25)
   }
 }

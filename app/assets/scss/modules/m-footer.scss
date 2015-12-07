@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  color: $c-grey6;
+  color: $grey--600;
   text-align: center;
 }
 
@@ -21,20 +21,20 @@
     margin-left: em($ratio--s);
   }
 
-  color: $c-color2;
+  color: $color2--500;
   @include state--hover {
-    color: $c-color1;
+    color: $color1--500;
   }
   &:active {
-    color: $c-color1--black;
+    color: $color1--900;
   }
 }
 
 .m-footer__title {
-  color: $c-color1--dark;
+  color: $color1--700;
 }
 .m-footer__underline {
-  color: $c-color1--white;
+  color: $color1--300;
 }
 
 .m-footer__text {
@@ -70,19 +70,19 @@
 }
 
 .m-footer__shape--circle {
-  stroke: $c-color3--light;
+  stroke: $color3--400;
 }
 .m-footer__shape--parallel {
-  stroke: $c-grey3;
+  stroke: $grey--300;
 }
 .m-footer__shape--triangle {
-  stroke: $c-color2--light;
+  stroke: $color2--400;
 }
 .m-footer__shape--pie {
-  stroke: $c-color4--light;
+  stroke: $color4--400;
 }
 .m-footer__shape--rectangle {
-  stroke: $c-color1--light;
+  stroke: $color1--400;
 }
 
 @include media($tablet) {

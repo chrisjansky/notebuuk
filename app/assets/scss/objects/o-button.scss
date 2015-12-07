@@ -22,10 +22,10 @@ Styleguide 3.1.
   }
 
   @include state--link {
-    color: $c-color1;
+    color: $color1--500;
   }
   @include state--active {
-    color: $c-color1--white;
+    color: $color1--300;
   }
 }
 .o-button__icon {

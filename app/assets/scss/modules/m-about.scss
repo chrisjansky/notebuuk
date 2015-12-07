@@ -3,7 +3,7 @@
   overflow: hidden;
 
   color: white;
-  background-color: $c-color1--black;
+  background-color: $color1--900;
 
   z-index: $index--s;
 }
@@ -42,19 +42,19 @@
 }
 
 .m-about__shape--circle {
-  fill: $c-color3--light;
+  fill: $color3--400;
 }
 .m-about__shape--parallel {
-  fill: $c-grey4;
+  fill: $grey--400;
 }
 .m-about__shape--triangle {
-  fill: $c-color2--light;
+  fill: $color2--400;
 }
 .m-about__shape--pie {
-  fill: $c-color4--light;
+  fill: $color4--400;
 }
 .m-about__shape--rectangle {
-  fill: $c-color1--light;
+  fill: $color1--400;
 }
 
 @include media($tablet) {

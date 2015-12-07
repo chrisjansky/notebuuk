@@ -55,7 +55,7 @@
 .m-opening__background--5 {background-image: url("../images/bg_stopmotion5.jpg"); }
 
 .m-portfolio {
-  color: $c-grey5;
+  color: $grey--500;
   background-color: white;
 }
 .m-portfolio__intro {
@@ -87,7 +87,7 @@
 .m-portfolio__strong {
   font-weight: $font__sans--regular;
 
-  color: $c-grey3;
+  color: $grey--300;
 }
 .m-portfolio__underline {
   border-bottom: $line--b solid;
@@ -99,21 +99,21 @@
 .m-portfolio__content--universal {
   overflow: auto;
 
-  color: $c-color4--light;
+  color: $color4--400;
 }
 .m-portfolio__content--ideal {
   @include shift(4 of $columns__desktop);
 
   margin-top: em($ratio--b);
 
-  color: $c-color2;
+  color: $color2--500;
 }
 .m-portfolio__content--original {
   overflow: auto;
 
   padding-top: em(60);
 
-  color: $c-color3--black;
+  color: $color3--900;
 }
 .m-portfolio__image--universal {
   width: 60%;
@@ -134,7 +134,7 @@
 .m-portfolio__footer {
   margin-top: em($ratio--l);
 
-  color: $c-color1;
+  color: $color1--500;
 }
 .m-portfolio__actions {
   text-align: center;

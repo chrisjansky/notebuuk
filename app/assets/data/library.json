@@ -1,0 +1,92 @@
+{
+  "library": {
+    "wood": [
+      {
+        "slug": "birch",
+        "name": "Bříza"
+      },
+      {
+        "slug": "maple",
+        "name": "Javor"
+      },
+      {
+        "slug": "ash",
+        "name": "Jasan"
+      },
+      {
+        "slug": "spruce",
+        "name": "Smrk"
+      },
+      {
+        "slug": "beech",
+        "name": "Buk"
+      },
+      {
+        "slug": "sapele",
+        "name": "Mahagon"
+      },
+      {
+        "slug": "oak",
+        "name": "Dub"
+      },
+      {
+        "slug": "cedar",
+        "name": "Cedr"
+      },
+      {
+        "slug": "pear",
+        "name": "Hruška"
+      },
+      {
+        "slug": "zebrano",
+        "name": "Zebrano"
+      },
+      {
+        "slug": "walnut",
+        "name": "Ořech"
+      },
+      {
+        "slug": "rosewood",
+        "name": "Palisandr"
+      }
+    ],
+    "colors": [
+      {
+        "slug": "purple",
+        "name": "Vínová"
+      },
+      {
+        "slug": "mint",
+        "name": "Tyrkysová"
+      },
+      {
+        "slug": "blue",
+        "name": "Modrá"
+      },
+      {
+        "slug": "steel",
+        "name": "Ocelová"
+      },
+      {
+        "slug": "grey",
+        "name": "Šedá"
+      },
+      {
+        "slug": "pink",
+        "name": "Lososová"
+      },
+      {
+        "slug": "yellow",
+        "name": "Žlutá"
+      },
+      {
+        "slug": "charcoal",
+        "name": "Antracitová"
+      },
+      {
+        "slug": "sky",
+        "name": "Blankytná"
+      }
+    ]
+  }
+}

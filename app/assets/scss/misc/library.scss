@@ -1,0 +1,16 @@
+$library-colors:
+  pink hsb(10, 40, 95),
+  grey hsb(215, 5, 70),
+  yellow hsb(48, 60, 95),
+  mint hsb(165, 50, 80),
+  sky hsb(190, 40, 85),
+  steel hsb(215, 30, 30),
+  blue hsb(215, 70, 60),
+  charcoal hsb(220, 7, 35),
+  purple hsb(325, 65, 60);
+
+@each $color in $library-colors {
+  .background--#{nth($color, 1)} {
+    background-color: nth($color, 2);
+  }
+}

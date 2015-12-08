@@ -17,6 +17,10 @@
 .o-section--light {
   background-color: $grey--100;
 }
+.o-section--dark {
+  color: white;
+  background-color: $color1--900;
+}
 
 .o-logo {
   display: inline-block;

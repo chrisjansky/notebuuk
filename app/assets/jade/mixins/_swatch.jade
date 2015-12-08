@@ -1,0 +1,9 @@
+mixin swatch(type, index)
+  li.o-swatches__item
+    if type == "color"
+      - var instance = library.colors[index]
+      span.o-swatches__solid(class="o-swatches__solid--#{type} background--#{instance.slug}")
+    else
+      - var instance = library.wood[index]
+      span.o-swatches__solid(class="o-swatches__solid--#{type}" style="background-image: url('assets/images/wood/wood_#{instance.slug}.jpg')")
+    strong.o-swatches__name= instance.name

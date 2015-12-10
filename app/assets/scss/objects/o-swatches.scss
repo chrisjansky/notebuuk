@@ -1,23 +1,44 @@
 .o-swatches {
+  @include clearfix;
+
   list-style-type: none;
   padding-left: 0;
+
+  @include margin(null auto);
+  max-width: em(1100);
+
+  > :nth-child(2),
+  > :nth-child(5),
+  > :nth-child(7),
+  > :nth-child(12),
+  > :nth-child(16),
+  > :last-child {
+    @include shift(0.5 of 4);
+  }
+
+  > :nth-child(22) {
+    @include shift(1 of 4);
+    clear: left;
+  }
+
+  > :nth-child(6),
+  > :nth-child(10),
+  > :nth-child(17) {
+    @include omega();
+  }
 }
 .o-swatches__item {
   position: relative;
 
-  @include span-columns(1.5 of $columns__desktop);
+  @include span-columns(0.5 of 4);
 
-  & + & {
-    @include shift(1 of $columns__desktop);
-  }
-
-  margin-bottom: flex-gutter();
+  margin-bottom: flex-gutter(4);
 
   text-align: center;
 
   &:hover {
     .o-swatches__solid {
-      transform: translateY(-25%);
+      transform: translateY(em(-$unit--xl));
     }
 
     .o-swatches__name {
@@ -51,8 +72,15 @@
 }
 
 .o-swatches__content {
-  @include span-columns(6 of $columns__desktop);
+  @include span-columns(2 of 4);
+
+  text-align: center;
+  color: $color1--400;
 }
 .o-swatches__note {
-  @include span-columns(4.5 of $columns__desktop);
+  @include span-columns(2 of 4);
+  margin-bottom: flex-gutter(4);
+
+  text-align: center;
+  color: $color3--300;
 }

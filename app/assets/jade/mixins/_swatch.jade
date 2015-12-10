@@ -1,5 +1,5 @@
 mixin swatch(type, index)
-  li.o-swatches__item
+  li.o-swatches__item(class="o-swatches__item--#{type}-#{index}")
     if type == "color"
       - var instance = library.colors[index]
       span.o-swatches__solid(class="o-swatches__solid--#{type} background--#{instance.slug}")

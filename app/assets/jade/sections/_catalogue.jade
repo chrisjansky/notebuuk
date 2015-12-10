@@ -1,9 +1,9 @@
 section.m-catalogue.o-section--dark
-  .l-wrap
+  .l-wrap.l-wrap--top-big
     h2.m-catalogue__title.t-h2 radost na 
       span.t-h2__underline míru
     .m-catalogue__intro
-      p.t-lead Ruční výroba nám umožňuje použití nejrůznějších kombinací textilního plátna a&nbsp;dřevěné dýhy &mdash; díky tomu si můžete notebuuk upravit přesně podle Vašich představ.
+      p.t-lead Díky ruční práci můžeme notebuuky vyrábět v nejrůznějších kombinacích textilního plátna a&nbsp;dřevěné dýhy &mdash; teď si jen vybrat tu svou!
     ul.o-swatches
       +swatch("wood", 0)
       +swatch("wood", 6)
@@ -12,22 +12,28 @@ section.m-catalogue.o-section--dark
       +swatch("color", 4)
       +swatch("wood", 5)
       +swatch("color", 6)
-      +swatch("wood", 8)
-      +swatch("color", 7)
       li.o-swatches__content
-        p.t-lead Vybírat můžete z 9 sytě probarvených, na dotek přijemných pláten a&nbsp;12 typů dřevin &mdash; od dobře známého buku až po odvážné zebrano. Teď už jen to příjemné&hellip; vybrat si ten svůj!
-      +swatch("wood", 10)
+        p.t-lead Na výběr máte z&nbsp;9 sytě probarvených, na dotek příjemných pláten a&nbsp;12 typů dřevin &mdash; od dobře známého buku až po odvážné zebrano.
+        p Napište nám o&nbsp;svou oblíbenou kombinaci &ndash; názvy dřev i pláten odhalíte najetím myši &ndash; a&nbsp;my se ozveme, zda-li je stále na skladu; respektive kdy bychom ji mohli pro Vás vyrobit.
+      +swatch("wood", 8)
       +swatch("color", 8)
+      +swatch("wood", 10)
+      +swatch("color", 7)
       +swatch("wood", 1)
-      +swatch("wood", 3)
       +swatch("color", 1)
-      +swatch("wood", 4)
-      li.o-swatches__note
-        p Dostupné barvy plátna a&nbsp;dřeva můžete vidět v okolí &mdash; najetím myši odhalíte název. Napište nám a&nbsp;my se ozveme s&nbsp;aktuálně dostupným sortimentem.
+      +swatch("wood", 11)
       +swatch("color", 0)
+      +swatch("wood", 4)
       +swatch("color", 3)
+      +swatch("wood", 9)
+      li.o-swatches__note
+        a.m-catalogue__button.o-button.o-button--secondary(href="mailto:hello@notebuuk.cz?body=Zdravím, chtěl bych se zeptat, jestli máte notebuuky v kombinaci…")
+          svg.o-button__icon
+            use(xlink:href="#icon_mail")
+          span.o-button__text Napsat si o notebuuk svých představ
+        small.m-catalogue__hint.t-tiny Můžete nám také napsat na adresu 
+          include ../partials/_enkoder-hint.html
+          |  ze svého oblíbeného e-mailového klienta.
       +swatch("wood", 7)
       +swatch("color", 5)
-      +swatch("wood", 9)
-      +swatch("wood", 11)
-
+      +swatch("wood", 3)

@@ -141,3 +141,26 @@
 
   margin-top: em($ratio--m);
 }
+
+.m-catalogue__intro {
+  @include margin(null auto);
+
+  text-align: center;
+
+  width: flex-grid(6, $columns__desktop);
+
+  margin-bottom: em($ratio--l);
+
+  color: $color3--300;
+}
+
+.m-catalogue__button {
+  margin-bottom: em($ratio--b);
+}
+.m-catalogue__hint {
+  display: block;
+
+  @include margin(null auto);
+
+  max-width: 30em;
+}

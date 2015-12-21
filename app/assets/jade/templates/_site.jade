@@ -1,11 +1,15 @@
 extends _shared
 
 append template-head
+  <!-- build:css assets/css/style-min.css -->
   <!-- site:css -->
   <!-- endinject -->
+  <!-- endbuild -->
 
+  <!-- build:js assets/js/vendor-min.js -->
   <!-- vendor:js -->
   <!-- endinject -->
+  <!-- endbuild -->
 
 block template-body
   include /../bower_components/chj-framework/app/assets/jade/mixins/_dummy
@@ -17,6 +21,9 @@ block template-content
 
 append template-foot
   include ../partials/_analytics.html
-  
+
+  <!-- build:js assets/js/site-min.js -->
   <!-- site:js -->
   <!-- endinject -->
+  <!-- endbuild -->
+
